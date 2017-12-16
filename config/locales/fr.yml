@@ -1,4 +1,10 @@
 fr:
+  shop: "Shöp"
+  about: "À pröpos"
+  contact: "Contact"
   pages:
-    home:
-      hello: "Bonjour"
+    lookbook:
+    sphere:
+    about:
+    contact:
+

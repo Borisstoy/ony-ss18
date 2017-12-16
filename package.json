@@ -1,5 +1,21 @@
 {
   "name": "ony-ss18",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Borisstoy/ony-ss18.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Borisstoy/ony-ss18/issues"
+  },
+  "homepage": "https://github.com/Borisstoy/ony-ss18#readme",
+  "description": ""
 }

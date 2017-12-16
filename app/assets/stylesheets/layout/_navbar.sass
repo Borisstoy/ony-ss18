@@ -1,0 +1,67 @@
+#main-nav
+    +flexbox
+    +alignitems-center
+    padding: 2em 6em
+
+    @media all and (max-width: $screen-xs-max)
+        display: none
+        +flexdirection-column
+
+    a
+        color: $dark
+        font-size: .8em
+        text-decoration: none
+
+    .left-nav
+        +flex-grow(1)
+        text-align: left
+
+        @media all and (max-width: $screen-xs-max)
+            +flex-grow(0)
+
+        .logo-nav
+            max-width: 65px
+
+    .center-nav
+        +flex-grow(2)
+        text-align: center
+
+        @media all and (max-width: $screen-xs-max)
+            +flex-grow(0)
+            text-align: left
+
+        a
+            margin: 0 2%
+
+    .right-nav
+        +flex-grow(1)
+        +alignitems-center
+        text-align: right
+
+        @media all and (max-width: $screen-xs-max)
+            +flex-grow(0)
+            text-align: left
+
+        .shopping-nav, .paper-plane-nav
+            max-width: 20px
+
+        .shopping-nav
+            margin-left: 8%
+
+        .locale-switch
+            margin: 0 0 0 8%
+
+#mobile-nav-header
+    width: 100%
+    +flexbox
+    height: 60px
+
+    @media all and (min-width: $screen-xs-max)
+        display: none
+
+    @media all and (max-width: $screen-sm-min)
+        +flexbox
+
+    #mobile-nav-trigger
+        max-width: 35px
+

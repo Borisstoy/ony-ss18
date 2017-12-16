@@ -88,3 +88,9 @@ $screen-lg-max: 1024px;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
+
+@mixin flex-grow($val) {
+  -webkit-box-flex: $val;
+  -ms-flex-positive: $val;
+  flex-grow: $val;
+}
