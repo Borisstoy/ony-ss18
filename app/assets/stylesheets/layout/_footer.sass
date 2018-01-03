@@ -1,0 +1,30 @@
+#footer
+    width: 100%
+    height: 80px
+    text-align: center
+    padding: 0 6em
+    +flexbox
+    +alignitems-center
+    +justifycontent-spacebetween
+    position: absolute
+    bottom: 0
+
+    a, span
+        color: lighten($dark, 70%)
+        text-decoration: none
+        margin-bottom: 1rem
+        font-size: .8em
+
+        &:hover
+            color: $dark
+
+    .footer-left
+
+    .footer-right
+        +flexbox
+        +alignitems-center
+        +justifycontent-center
+        white-space: nowrap
+
+        a
+            margin: 0 0 0 2rem

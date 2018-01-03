@@ -1,7 +1,9 @@
 en:
   shop: "Shop"
-  about: "About"
+  about: "Aböut"
   contact: "Contact"
+  legal: "Legal"
+  t_and_c: "Terms & Conditions"
   pages:
     lookbook:
     sphere:
