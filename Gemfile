@@ -26,6 +26,8 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'font-awesome-rails'
 gem 'font-awesome-sass'
 
+gem 'browserify-rails'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'

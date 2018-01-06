@@ -25,7 +25,7 @@ module OnySs18
 
     config.assets.paths << Rails.root.join('node_modules')
 
-
+    # config.browserify_rails.commandline_options = '-t coffeeify --extension=".js.coffee"'
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
