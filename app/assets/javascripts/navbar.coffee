@@ -4,6 +4,8 @@ $ ->
   if $(window).width() > 767
     mobileNav.hide()
 
+  mobileNav.removeClass('expanded')
+
   $('#mobile-nav-trigger').click ->
 
     if !mobileNav.hasClass('expanded')
