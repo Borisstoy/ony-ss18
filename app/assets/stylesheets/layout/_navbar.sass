@@ -1,7 +1,9 @@
 #main-nav
     +flexbox
     +alignitems-center
-    padding: 2em 6em
+    padding: 3em 4em
+    background: #fff
+    z-index: 99
 
     @media all and (max-width: $screen-xs-max)
         display: none
@@ -9,7 +11,7 @@
 
     a
         color: $dark
-        font-size: .8em
+        font-size: .9em
         text-decoration: none
 
     .left-nav
@@ -38,12 +40,19 @@
         +alignitems-center
         text-align: right
 
+        a
+            margin: 0 2%
+            font-weight: 700
+
+            &:last-child
+                margin-right: 0
+
         @media all and (max-width: $screen-xs-max)
             +flex-grow(0)
             text-align: left
 
         .shopping-nav, .paper-plane-nav
-            max-width: 20px
+            max-width: 17px
 
         .shopping-nav
             margin-left: 8%
@@ -80,23 +89,28 @@
     border-bottom: 1px solid $borders
     background: #fff
 
-    a
-        color: $dark
-        text-decoration: none
-        margin-bottom: 1rem
+    #main-nav
+        padding: 0
 
     .left-nav
         .logo-nav
             max-width: 80px
             margin-bottom: 1rem
 
-    .center-nav
-        +flexbox
-        +flexdirection-column
+    // .center-nav
+    //     +flexbox
+    //     +flexdirection-column
 
     .right-nav
         +flexbox
         +flexdirection-column
+        +alignitems-left
+
+        a
+            color: $dark
+            text-decoration: none
+            margin-bottom: 1rem
+            margin-left: 0
 
         .shopping-nav, .paper-plane-nav
             max-width: 20px

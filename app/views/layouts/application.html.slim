@@ -10,10 +10,10 @@ html
     = stylesheet_link_tag    'application', media: 'all'
     = favicon_link_tag 'favicon-ony.png'
 
-  body
+  body class="#{is_dyptique_collection_body?}"
     = render 'shared/navbar'
     = render 'shared/flashes'
-    = render 'shared/footer'
     = yield
+    = render 'shared/footer'
     = javascript_include_tag 'application'
     = render "shared/analytics"

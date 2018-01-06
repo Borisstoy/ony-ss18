@@ -1,12 +1,20 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :lookbook,
+  skip_before_action :authenticate_user!, only: [ :dyptique,
+                                                  :bleu_citron,
+                                                  :velvet_underground,
                                                   :sphere,
                                                   :about,
                                                   :contact,
                                                   :legal,
                                                   :terms_and_conditions ]
 
-  def lookbook
+  def ss18
+  end
+
+  def bleu_citron
+  end
+
+  def velvet_underground
   end
 
   def sphere

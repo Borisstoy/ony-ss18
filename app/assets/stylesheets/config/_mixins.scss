@@ -25,8 +25,19 @@ $screen-lg-max: 1024px;
   border-radius: .2em!important;
 }
 
+@mixin vertical-center-alignment {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
 @mixin flexbox {
-  -js-display: flex;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
