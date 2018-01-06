@@ -60,21 +60,6 @@
         .locale-switch
             margin: 0 0 0 8%
 
-        .social-fb
-            &:before
-                font-family: FontAwesome
-                content: '\f09a'
-
-        .social-insta
-            &:before
-                font-family: FontAwesome
-                content: '\f16d'
-
-        .social-pinterest
-            &:before
-                font-family: FontAwesome
-                content: '\f231'
-
 #mobile-nav-header
     +flexbox
     +justifycontent-end
@@ -96,6 +81,7 @@
     width: 100%
     display: none
     text-align: left
+    +flexbox
     +flexdirection-column
     +justifycontent-center
     align-content: center
@@ -104,28 +90,19 @@
     border-bottom: 1px solid $borders
     background: #fff
 
-    #main-nav
-        padding: 0
+    @media all and (min-width: $screen-xs-max)
+        display: none
 
-    .left-nav
-        .logo-nav
-            max-width: 80px
-            margin-bottom: 1rem
+    .logo-nav
+        max-width: 80px
+        margin-bottom: 1rem
 
-    // .center-nav
-    //     +flexbox
-    //     +flexdirection-column
 
-    .right-nav
-        +flexbox
-        +flexdirection-column
-        +alignitems-left
+    .social-fb, a
+        color: $dark
+        text-decoration: none
+        margin-bottom: 1rem
+        margin-left: 0
 
-        a
-            color: $dark
-            text-decoration: none
-            margin-bottom: 1rem
-            margin-left: 0
-
-        .shopping-nav, .paper-plane-nav
-            max-width: 20px
+    .shopping-nav, .paper-plane-nav
+        max-width: 20px

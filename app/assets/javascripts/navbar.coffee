@@ -1,13 +1,15 @@
 $ ->
-  $('#mobile-nav-trigger').click ->
+  mobileNav   = $('#navMobile')
 
-    mobileNav   = $('#navMobile')
-    navContent  = $('#navMobile').html($('#main-nav').fadeIn(200))
+  if $(window).width() > 767
+    mobileNav.hide()
+
+  $('#mobile-nav-trigger').click ->
 
     if !mobileNav.hasClass('expanded')
       mobileNav.addClass('expanded')
-      mobileNav.stop().fadeIn(200)
+      mobileNav.stop().slideDown(200)
     else
       mobileNav.removeClass('expanded')
-      mobileNav.stop().fadeOut(200)
+      mobileNav.stop().slideUp(200)
 
