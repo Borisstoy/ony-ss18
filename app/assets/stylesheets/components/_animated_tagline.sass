@@ -1,0 +1,75 @@
+@-webkit-keyframes text-opacity
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@-webkit-keyframes to-blue
+    0%
+        color: #fff
+    50%
+        color: $blue
+    100%
+        color: $dark
+
+@-webkit-keyframes to-red
+    0%
+        color: #fff
+    50%
+        color: $red
+    100%
+        color: $dark
+
+@-webkit-keyframes to-yellow
+    0%
+        color: #fff
+    50%
+        color: $yellow
+    100%
+        color: $dark
+
+.dyptique-intro-1
+    h1
+        animation: text-opacity 1s linear
+
+    h4
+        text-transform: uppercase
+        font-size: 1em
+        text-align: center
+        animation: text-opacity 1s linear
+
+.dyptique-intro-2
+    .h2-first-part
+        color: $dark
+        animation: text-opacity .7s linear
+
+    .h2-1
+        animation: to-blue .3s forwards
+
+    .h2-2
+        animation: to-red .3s forwards
+        animation-delay: .1s
+
+    .h2-3
+        animation: to-yellow .3s forwards
+        animation-delay: .2s
+
+    .h2-4
+        animation: to-blue .3s forwards
+        animation-delay: .3s
+
+    .h2-5
+        animation: to-red .3s forwards
+        animation-delay: .4s
+
+    .h2-6
+        animation: to-yellow .3s forwards
+        animation-delay: .5s
+
+    .h2-7
+        animation: to-blue .3s forwards
+        animation-delay: .6s
+
+    .h2-8
+        animation: to-red .3s forwards
+        animation-delay: .7s
