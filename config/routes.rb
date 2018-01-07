@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
+
   devise_for :users
 
   scope '(:locale)', locale: /fr|en/ do
@@ -10,6 +12,10 @@ Rails.application.routes.draw do
     get 'about', to: 'pages#about'
     get 'legals', to: 'pages#legals'
     get 'contact', to: 'pages#contact'
+  end
+
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
 end

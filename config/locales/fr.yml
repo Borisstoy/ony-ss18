@@ -28,3 +28,9 @@ fr:
           attributes:
             email:
               invalid: "Veuillez entrer une adresse mail valide"
+
+  time:
+    formats:
+      default: "%Y / %m / %d"
+      short: "%d / %m / %Y"
+      long: "%d / %m / %Y"
