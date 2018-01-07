@@ -9,3 +9,15 @@
 
 .regular-navbar
     border-bottom: 6px solid #fff
+
+.mobile-show
+    @media all and (max-width: $screen-xs-max)
+        display: block
+    @media all and (min-width: $screen-xs-max)
+        display: none
+
+.desktop-show
+    @media all and (min-width: $screen-xs-max)
+        display: block
+    @media all and (max-width: $screen-xs-max)
+        display: none
