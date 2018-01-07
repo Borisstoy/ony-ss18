@@ -11,7 +11,7 @@
 
     a
         color: $dark
-        font-size: .9em
+        font-size: .8em
         text-decoration: none
 
     .left-nav
@@ -40,14 +40,17 @@
         +alignitems-center
         +flexbox
         text-align: right
+        position: relative
 
         .items-links
             +flex-grow(1)
 
         .social-links
-            +flex-grow(0)
             +flexbox
-            margin-left: 1.5rem
+            position: absolute
+            right: -145px
+            top: 45px
+            z-index: 98
 
             a
                 margin-left: 1.5rem!important
