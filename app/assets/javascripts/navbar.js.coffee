@@ -38,11 +38,11 @@ $ ->
     $('#onscroll-nav').slideUp(300)
 
   $('a#social-btn').click ->
-    $('.social-links').animate 'right':'28px'
+    $('.social-links').animate 'margin-right':'28px'
 
 $(document).mouseup (e) ->
   container = $('a#social-btn')
 
   if !container.is(e.target) and container.has(e.target).length == 0
-    $('.social-links').animate 'right':'-145px'
+    $('.social-links').animate 'margin-right':'-145px'
   return
