@@ -4,6 +4,11 @@
 #legals
     padding: 1em 4em
 
+    @media all and (max-width: $screen-xs-max)
+        +flexbox
+        +flexdirection-column
+        padding: 1em
+
     .legals-nav
         position: fixed
         float: left
@@ -12,6 +17,12 @@
         +flexdirection-column
         line-height: 2em
         font-size: .9em
+
+        @media all and (max-width: $screen-xs-max)
+            float: none
+            width: 100%
+            padding: 0 2em
+            position: static
 
         a
             color: $dark
@@ -24,7 +35,12 @@
     .legals-body
         float: right
         width: 85%
-        padding: 0 2em
+        padding: 0 2em 4em
+
+        @media all and (max-width: $screen-xs-max)
+            float: none
+            width: 100%
+            margin-top: 1rem
 
     .t-and-c
         display: none
