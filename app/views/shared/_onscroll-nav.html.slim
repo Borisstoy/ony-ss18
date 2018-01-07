@@ -1,0 +1,9 @@
+#onscroll-nav
+  .onscroll-nav-header
+    #onscroll-nav-close-btn
+      .fa.fa-minus
+  .onscroll-nav-body-wrapper
+    .onscroll-nav-body
+      = link_to root_path do
+          = image_tag 'ony-logo-dark.svg', class: 'logo-nav'
+      = render 'shared/navbar_links'

@@ -13,6 +13,9 @@ html
     = favicon_link_tag 'favicon-ony.png'
 
   body class="#{is_dyptique_collection_body?}"
+
+    = image_tag 'trigger-scroll-nav.svg', id: "on-scroll-nav-trigger"
+    = render 'shared/onscroll-nav'
     = render 'shared/navbar'
     = render 'shared/flashes'
     = yield

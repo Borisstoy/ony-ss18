@@ -38,18 +38,32 @@
     .right-nav
         +flex-grow(1)
         +alignitems-center
+        +flexbox
         text-align: right
 
-        a
-            margin: 0 2%
-            font-weight: 700
-            transition: .2s
+        .items-links
+            +flex-grow(1)
 
-            &:hover
-                color: lighten($dark, 60%)
+        .social-links
+            +flex-grow(0)
+            +flexbox
+            margin-left: 1.5rem
 
-            &:last-child
-                margin-right: 0
+            a
+                margin-left: 1.5rem!important
+
+        .social-links, .items-links
+
+            a
+                margin: 0 2%
+                font-weight: 700
+                transition: .2s
+
+                &:hover
+                    color: lighten($dark, 60%)
+
+                &:last-child
+                    margin-right: 0
 
         @media all and (max-width: $screen-xs-max)
             +flex-grow(0)
@@ -110,3 +124,15 @@
 
     .shopping-nav, .paper-plane-nav
         max-width: 20px
+
+    .items-links
+        +flexbox
+        +flexdirection-column
+        margin-left: 0
+
+    .social-links
+        +flex-grow(0)
+        +flexbox
+
+        a
+            margin-right: 1.5em

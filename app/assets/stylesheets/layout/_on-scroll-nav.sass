@@ -1,0 +1,66 @@
+#on-scroll-nav-trigger
+    position: fixed
+    right: 1.5%
+    top: 3%
+    width: 75px
+    height: 45px
+    z-index: 9999
+    margin-right: -85px
+    transition: .2s
+
+    &:hover
+        height: 53px
+
+    @media all and (max-width: $screen-xs-max)
+        display: none
+
+#onscroll-nav
+    display: none
+    height: 100vh
+    width: 100%
+    background: #fff
+    z-index: 9999999999
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+
+
+    @media all and (max-width: $screen-xs-max)
+        display: none
+
+    .onscroll-nav-header
+        height: 20%
+        +flexbox
+        +justifycontent-end
+        padding: 2em 3em
+
+    .onscroll-nav-body-wrapper
+        +flexbox
+        +alignitems-center
+        +justifycontent-center
+        width: 100%
+
+        .onscroll-nav-body
+            +flexbox
+            +flexdirection-column
+            text-align: left
+
+            .items-links
+                +flexbox
+                +flexdirection-column
+
+            a
+                text-decoration: none
+                color: $dark
+                line-height: 2.5em
+
+            .social-links
+                +flexbox
+
+                a
+                    margin-right: 2rem
+
+            .logo-nav
+                max-width: 120px
