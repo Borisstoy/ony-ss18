@@ -1,0 +1,248 @@
+#dyptique-intro
+    height: 300px
+    +flexbox
+
+    @media all and (max-width: $screen-xs-max)
+        +flexdirection-column
+        height: auto
+
+    .dyptique-intro-1
+        width: 33%
+        border-right: 6px solid $dark
+        border-bottom: 6px solid $dark
+        padding-left: 4em
+        background: $blue
+        z-index: 99
+        +flexbox
+        +flexdirection-column
+        +alignitems-left
+        +justifycontent-center
+        color: #fff
+
+        @media all and (max-width: $screen-xs-max)
+            width: 100%
+            border-right: 0
+            border-top: 6px solid $dark
+            padding-left: 0
+            +alignitems-center
+
+        h4
+            text-transform: uppercase
+            font-size: 1em
+            text-align: center
+
+    .dyptique-intro-2
+        width: 67%
+        border-bottom: 6px solid $dark
+        +vertical-center-alignment
+        background: #fff
+        z-index: 99
+
+        @media all and (max-width: $screen-xs-max)
+            width: 100%
+
+        h2
+            font-size: 4.7em
+            font-weight: 700
+            text-transform: uppercase
+            z-index: 0
+
+            @media all and (max-width: $screen-xs-max)
+                font-size: 2.7em
+
+#dyptique-wrapper
+    width: 100%
+    position: relative
+
+    .first-row
+        +flexbox
+
+        @media all and (max-width: $screen-xs-max)
+            +flexdirection-column
+
+        .first-row-col-1
+            width: 50%
+            border-right: 6px solid $dark
+            border-bottom: 6px solid $dark
+
+            @media all and (max-width: $screen-xs-max)
+                width: 100%
+                border-right: none
+                border-left: none
+
+            .dyptique-img-4
+                max-width: 100%
+
+        .first-row-col-2
+            width: 40%
+            background: $red
+            border-right: 6px solid $dark
+            border-bottom: 6px solid $dark
+
+            @media all and (max-width: $screen-xs-max)
+                width: 100%
+                border-right: none
+                border-left: none
+
+            .dyptique-img-3
+                max-width: 40%
+                border-bottom: 6px solid $dark
+                border-right: 6px solid $dark
+                position: absolute
+                top: 0
+
+                @media all and (max-width: $screen-xs-max)
+                    max-width: 100%
+                    position: relative
+                    border-right: none
+                    border-left: none
+                    border-bottom: none
+
+        .first-row-col-3
+            width: 10%
+            background: $yellow
+            border-bottom: 6px solid $dark
+
+            @media all and (max-width: $screen-xs-max)
+                display: none
+
+    .second-row
+        +flexbox
+
+        .second-row-col-1
+            width: 20%
+            background: $dark
+
+            @media all and (max-width: $screen-xs-max)
+                display: none
+
+        .second-row-col-2
+            width: 80%
+
+            @media all and (max-width: $screen-xs-max)
+                width: 100%
+
+            .dyptique-img-1
+                max-width: 100%
+                border-bottom: 6px solid $dark
+
+    .third-row
+        +flexbox
+
+        @media all and (max-width: $screen-xs-max)
+            display: none
+
+        .third-row-col-1
+            height: 150px
+            width: 70%
+            background: #fff
+            border-bottom: 6px solid $dark
+            border-right: 6px solid $dark
+
+        .third-row-col-2
+            height: 150px
+            width: 30%
+            background: $red
+            border-bottom: 6px solid $dark
+
+    .fourth-row
+        +flexbox
+
+        @media all and (max-width: $screen-xs-max)
+            +flexdirection-column
+
+        .fourth-row-col-1
+            width: 10%
+            background: $blue
+            border-bottom: 6px solid $dark
+
+            @media all and (max-width: $screen-xs-max)
+                display: none
+
+        .fourth-row-col-2
+            width: 50%
+
+            @media all and (max-width: $screen-xs-max)
+                width: 100%
+
+            .dyptique-img-5
+                max-width: 100%
+                border-left: 6px solid $dark
+                border-right: 6px solid $dark
+                border-bottom: 6px solid $dark
+
+                @media all and (max-width: $screen-xs-max)
+                    border-right: none
+                    border-left: none
+                    border-bottom: none
+
+        .fourth-row-col-3
+            width: 40%
+            background: $yellow
+            border-bottom: 6px solid $dark
+
+            @media all and (max-width: $screen-xs-max)
+                width: 100%
+
+            .dyptique-img-2
+                max-width: 100%
+                border-bottom: 6px solid $dark
+
+                @media all and (max-width: $screen-xs-max)
+                    border-bottom: none
+
+    .fifth-row
+        +flexbox
+
+        @media all and (max-width: $screen-xs-max)
+            +flexdirection-column
+
+        .fifth-row-col-1
+            width: 40%
+            background: #fff
+            border-bottom: 6px solid $dark
+            border-right: 6px solid $dark
+            position: relative
+
+            @media all and (max-width: $screen-xs-max)
+                width: 100%
+                border-right: none
+                border-left: none
+
+            .dyptique-img-6
+                max-width: 100%
+                border-top: 6px solid $dark
+                position: absolute
+                bottom: 0
+
+        .fifth-row-col-2
+            width: 50%
+            background: #fff
+
+            @media all and (max-width: $screen-xs-max)
+                width: 100%
+
+            .dyptique-img-7
+                max-width: 100%
+                border-right: 6px solid $dark
+                border-bottom: 6px solid $dark
+
+                @media all and (max-width: $screen-xs-max)
+                    border-right: none
+
+        .fifth-row-col-3
+            width: 20%
+            border-bottom: 6px solid $dark
+            background: #fff
+
+            @media all and (max-width: $screen-xs-max)
+                display: none
+
+
+            // .color-box-1
+            //     background: #fff
+            //     height: 70%
+
+            // .color-box-1
+            //     background: $dark
+

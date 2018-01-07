@@ -5,7 +5,7 @@ class PagesController < ApplicationController
                                                   :sphere,
                                                   :about,
                                                   :contact,
-                                                  :legal,
+                                                  :legals,
                                                   :terms_and_conditions ]
 
   def ss18
@@ -26,9 +26,6 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def legal
-  end
-
-  def terms_and_conditions
+  def legals
   end
 end

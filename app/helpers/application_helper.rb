@@ -3,6 +3,8 @@ module ApplicationHelper
     request.path.include?(path)
   end
 
+  # depreciated
+
   def is_dyptique_collection_body?
     if is_path?('dyptique') || current_page?(root_url)
       "dyptique-body"
@@ -22,4 +24,6 @@ module ApplicationHelper
   def is_dyptique?
     is_path?('dyptique') || current_page?(root_url)
   end
+
+  ##
 end
