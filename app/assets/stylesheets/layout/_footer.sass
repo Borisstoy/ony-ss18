@@ -13,20 +13,19 @@
         padding: 2em 0
         line-height: 2em
 
-    a, span
-        color: lighten($dark, 70%)
-        text-decoration: none
-        margin-bottom: 1rem
-        font-size: .8em
-        transition: .2s
-
-        &:hover
-            color: $dark
 
     .footer-left
 
         a, span
+            color: lighten($dark, 70%)
+            text-decoration: none
+            margin-bottom: 1rem
+            font-size: .8em
+            transition: .2s
             margin-right: 2rem
+
+            &:hover
+                color: $dark
 
         @media all and (max-width: $screen-xs-max)
             +flexbox
@@ -45,6 +44,13 @@
 
         a
             margin: 0 0 0 2rem
+            color: $dark
+            font-size: .8em
+            text-decoration: none
+            transition: .2s
+
+            &:hover
+                color: lighten($dark, 30%)
 
             @media all and (max-width: $screen-xs-max)
                 margin: 0
