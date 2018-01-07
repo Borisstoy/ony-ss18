@@ -1,3 +1,6 @@
+.newsletter-intro
+    margin-bottom: 2rem
+
 #newsletter-form-wrapper
     height: 100vh
     +flexbox
@@ -6,30 +9,10 @@
     @media screen and (max-width: $screen-md)
         height: auto
 
-    .newsletter-logo
-        max-width: 90px
-        margin: 4% 0
-
     .newsletter-header
         +flexbox
         +justifycontent-spacebetween
         +alignitems-center
-
-        .back-to-map
-            font-size: .7em
-            text-transform: uppercase
-            font-weight: 700
-            color: #000
-            white-space: nowrap
-
-            &:before
-                font-family: FontAwesome
-                content: '\f104'
-                margin-right: 5%
-
-            &:hover
-                text-decoration: none
-                color: lighten(#000, 50%)
 
     .newsletter-form
         #newsletter_name, #newsletter_email

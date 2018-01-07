@@ -1,13 +1,13 @@
-p.newsletter-intro= t('newsletter.get_news')
+h5.newsletter-intro= t('newsletter.get_news')
 
-= simple_form_for new_newsletter, html: { class: 'contact-form' }  do |f|
+= simple_form_for new_newsletter, html: { class: 'newsletter-form' }  do |f|
 
   = f.input      :email,
                  label: false,
                  placeholder: I18n.t('newsletter.email'),
                  required: true
 
-  .contact-submit
+  .newsletter-submit
     = f.button :submit, I18n.t('newsletter.submit'),
-                        id: 'contact_submit'
+                        id: 'newsletter_submit'
 
