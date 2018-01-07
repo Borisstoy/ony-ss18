@@ -1,0 +1,31 @@
+.alert
+    margin: 0
+    text-align: center
+    width: 60%
+    margin: 0 auto
+    +border-radius
+    top: 26px
+    left: 0
+    right: 0
+    width: 30%
+    font-size: .8em
+    z-index: 99999999999
+    position: absolute
+    border: none
+
+    @media (max-width: $screen-lg)
+        width: 90%
+
+    button
+        display: none
+
+.alert-info
+    background-color: rgba(46, 204, 113, 0.2)
+    color: $green
+    border: none
+
+.alert-warning
+    background-color: rgba(241, 196, 15, 0.2)
+    color: $yellow
+    border: none
+

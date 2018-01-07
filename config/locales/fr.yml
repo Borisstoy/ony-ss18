@@ -20,6 +20,7 @@ fr:
   controllers:
     newsletter:
       fail: "Veuillez compléter le formulaire"
+      success: "Demande envoyée"
 
   activerecord:
     errors:

@@ -20,6 +20,7 @@ en:
   controllers:
     newsletter:
       fail: "Please fill in the form"
+      success: "Request sent"
 
   activerecord:
     errors:
