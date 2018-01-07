@@ -18,4 +18,8 @@ module ApplicationHelper
       "regular-navbar"
     end
   end
+
+  def is_dyptique?
+    is_path?('dyptique') || current_page?(root_url)
+  end
 end

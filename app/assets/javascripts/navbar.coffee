@@ -22,7 +22,7 @@ $ ->
 
     else if $(window).scrollTop() <= 137
       $('#main-nav').slideDown(200)
-      $('#main-nav').css('display', '');
+      $('#main-nav').css('display', '')
       $('#on-scroll-nav-trigger').animate 'margin-right':'-85px'
 
   $('#on-scroll-nav-trigger').click ->

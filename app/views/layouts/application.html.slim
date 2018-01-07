@@ -14,7 +14,8 @@ html
 
   body class="#{is_dyptique_collection_body?}"
 
-    = image_tag 'trigger-scroll-nav.svg', id: "on-scroll-nav-trigger"
+    - if is_dyptique?
+      = image_tag 'trigger-scroll-nav.svg', id: "on-scroll-nav-trigger"
     = render 'shared/onscroll-nav'
     = render 'shared/navbar'
     = render 'shared/flashes'
