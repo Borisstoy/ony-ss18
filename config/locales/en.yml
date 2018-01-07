@@ -11,3 +11,20 @@ en:
     about:
     contact:
 
+  newsletter:
+    subscribe: "Subscribe to our newsletter"
+    submit: "Send"
+    email: "Your email"
+    get_news: "Newsletter subscription"
+
+  controllers:
+    newsletter:
+      fail: "Please fill in the form"
+
+  activerecord:
+    errors:
+      models:
+        newsletter:
+          attributes:
+            email:
+              invalid: "Please enter a valid email address"

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   scope '(:locale)', locale: /fr|en/ do
     root to: 'pages#dyptique'
+    resources :newsletters
     get 'dyptique', to: 'pages#dyptique'
     get 'velvet_underground', to: 'pages#velvet_underground'
     get 'sphere', to: 'pages#sphere'

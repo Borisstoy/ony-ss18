@@ -24,6 +24,12 @@
             color: $dark
 
     .footer-left
+        a, span
+            margin-right: 2rem
+
+        @media all and (max-width: $screen-xs-max)
+            +flexbox
+            +flexdirection-column
 
     .footer-right
         +flexbox

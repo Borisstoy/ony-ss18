@@ -3,7 +3,7 @@ fr:
   about: "À pröpos"
   contact: "Contact"
   follow: "Föllow"
-  legal: "Legal"
+  legal: "Légal"
   t_and_c: "Termes & Conditions"
   pages:
     lookbook:
@@ -11,3 +11,20 @@ fr:
     about:
     contact:
 
+  newsletter:
+    subscribe: "Inscrivez-vous à notre newsletter"
+    submit: "Envoyer"
+    email: "Votre email"
+    get_news: "Insription à la newsletter"
+
+  controllers:
+    newsletter:
+      fail: "Veuillez compléter le formulaire"
+
+  activerecord:
+    errors:
+      models:
+        newsletter:
+          attributes:
+            email:
+              invalid: "Veuillez entrer une adresse mail valide"

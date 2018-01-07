@@ -1,0 +1,13 @@
+p.newsletter-intro= t('newsletter.get_news')
+
+= simple_form_for new_newsletter, html: { class: 'contact-form' }  do |f|
+
+  = f.input      :email,
+                 label: false,
+                 placeholder: I18n.t('newsletter.email'),
+                 required: true
+
+  .contact-submit
+    = f.button :submit, I18n.t('newsletter.submit'),
+                        id: 'contact_submit'
+
