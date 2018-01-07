@@ -26,6 +26,8 @@
   p="(Vous pouvez accéder aux informations vous concernant et procéder éventuellement aux rectifications nécessaires directement sur le site en vous rendant sur votre compte.)"
   h5 Crédits
   .credits
-    span="Webdesigner / Développeur"
-    = ": "
-    span= mail_to('boris.stoy@gmail.com', 'Boris Stoyanov-Brignoli')
+    span
+      ="Webdesigner / Développeur:"
+      | &nbsp;
+    span style='text-decoration:underline'
+      = mail_to('boris.stoy@gmail.com', 'Boris Stoyanov-Brignoli')
