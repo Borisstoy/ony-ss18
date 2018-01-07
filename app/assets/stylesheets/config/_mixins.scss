@@ -70,9 +70,9 @@ $screen-lg-max: 1024px;
   align-items: center;
 }
 
-@mixin alignitems-left {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
+@mixin alignitems-end {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
 }
 
 @mixin justifycontent-center {
