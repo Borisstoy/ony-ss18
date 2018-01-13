@@ -9,5 +9,5 @@ $ ->
     container1 = $('#modalContainer')
     container2 = $('#modalOverlay')
 
-    container1.animate 'margin-top':'-100%', 'z-index': '-1'
+    container1.animate 'margin-top':'-120%', 'z-index': '-1'
     container2.delay(200).animate 'height':'0'
