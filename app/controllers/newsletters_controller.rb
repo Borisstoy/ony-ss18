@@ -15,8 +15,8 @@ class NewslettersController < ApplicationController
     respond_to do |format|
       if @new_newsletter.save
         format.js
-        flash[:notice] = t('controllers.newsletter.success')
         # AdminNotificationMailer.new_newsletter_notification(@new_newsletter).deliver
+        flash[:notice] = t('controllers.newsletter.success')
         format.html { redirect_back(fallback_location: root_path) }
       else
         format.js { render :new }

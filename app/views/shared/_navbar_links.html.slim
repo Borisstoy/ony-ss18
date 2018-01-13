@@ -1,8 +1,13 @@
 .items-links
-  = link_to 'Cöllections', root_path
   = link_to 'Shöp', 'http://onyfrance.tictail.com/', target: "blank"
+  = link_to 'Cöllections', root_path
   = link_to t('about'), about_path
-  = mail_to 'contact@ony-france.com', 'Cöntact'
+  = link_to 'Cöntact', new_contact_path(@new_contact),
+                       class: 'openNewsletterBtn desktop-show',
+                       remote: true
+
+  = link_to 'Cöntact', new_contact_path(@new_contact), class: 'mobile-show'
+
   a#social-btn= t('follow')
 .social-links
   = link_to 'https://www.facebook.com/ony.france', target: "blank", class: 'social-fb' do

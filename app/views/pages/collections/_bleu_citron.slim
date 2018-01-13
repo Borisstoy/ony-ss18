@@ -1,0 +1,4 @@
+#bleu-citron-wrapper
+  - Dir.foreach('app/assets/images/bleu_citron') do |image|
+    - next if image == '.' or image == '..'
+    = image_tag "bleu_citron/#{image}"

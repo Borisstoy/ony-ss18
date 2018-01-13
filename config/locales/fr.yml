@@ -1,6 +1,6 @@
 fr:
   shop: "Shöp"
-  about: "À pröpos"
+  about: "Örigin"
   contact: "Contact"
   follow: "Föllow"
   legal: "Légal"
@@ -12,20 +12,36 @@ fr:
     contact:
 
   newsletter:
-    subscribe: "Inscrivez-vous à notre newsletter"
+    subscribe: "Join the squad"
     submit: "Envoyer"
     email: "Votre email"
     get_news: "Insription à la newsletter"
+
+  contact:
+    submit: "Envoyer"
+    name: "Votre prénom"
+    last_name: "Votre nom"
+    newsletter: "S'inscrire à notre newsletter?"
+    email: "Votre email"
+    get_news: "Keep it touch"
+    body: "Votre message"
 
   controllers:
     newsletter:
       fail: "Veuillez compléter le formulaire"
       success: "Demande envoyée"
+    contact:
+      success: "Talk to you soon"
+      fail: "Veuillez compléter le formulaire"
 
   activerecord:
     errors:
       models:
         newsletter:
+          attributes:
+            email:
+              invalid: "Veuillez entrer une adresse mail valide"
+        contact:
           attributes:
             email:
               invalid: "Veuillez entrer une adresse mail valide"

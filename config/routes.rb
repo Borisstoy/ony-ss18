@@ -4,9 +4,10 @@ Rails.application.routes.draw do
   devise_for :users
 
   scope '(:locale)', locale: /fr|en/ do
-    root to: 'pages#dyptique'
+    root to: 'pages#collections'
     resources :newsletters
-    get 'dyptique', to: 'pages#dyptique'
+    resources :contacts
+    get 'collections', to: 'pages#collections'
     get 'velvet_underground', to: 'pages#velvet_underground'
     get 'sphere', to: 'pages#sphere'
     get 'about', to: 'pages#about'

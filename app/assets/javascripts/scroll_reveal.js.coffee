@@ -7,7 +7,7 @@ fooReveal = {
   mobile   : false
 }
 
-window.sr = ScrollReveal()
+#window.sr = ScrollReveal()
 sr.reveal('.dyptique-img-4')
 sr.reveal('.dyptique-img-3', fooReveal)
 sr.reveal('.dyptique-img-1', fooReveal)

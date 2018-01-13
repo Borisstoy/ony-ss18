@@ -1,7 +1,7 @@
 en:
   shop: "Shop"
   about: "Aböut"
-  contact: "Contact"
+  contact: "Örigin"
   follow: "Föllow"
   legal: "Legal"
   t_and_c: "Terms & Conditions"
@@ -12,20 +12,36 @@ en:
     contact:
 
   newsletter:
-    subscribe: "Subscribe to our newsletter"
+    subscribe: "Join the squad"
     submit: "Send"
     email: "Your email"
     get_news: "Newsletter subscription"
+
+  contact:
+    submit: "Send"
+    name: "Your name"
+    last_name: "Your last name"
+    newsletter: "Subscribe to our newsletter?"
+    email: "Your email"
+    get_news: "Keep it touch"
+    body: "Your message"
 
   controllers:
     newsletter:
       fail: "Please fill in the form"
       success: "Request sent"
+    contact:
+      success: "À très vite"
+      fail: "Please fill in the form"
 
   activerecord:
     errors:
       models:
         newsletter:
+          attributes:
+            email:
+              invalid: "Please enter a valid email address"
+        contact:
           attributes:
             email:
               invalid: "Please enter a valid email address"

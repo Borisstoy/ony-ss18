@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :dyptique,
+  skip_before_action :authenticate_user!, only: [ :collections,
                                                   :bleu_citron,
                                                   :velvet_underground,
                                                   :sphere,
