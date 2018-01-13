@@ -23,7 +23,7 @@ fr:
     last_name: "Votre nom"
     newsletter: "S'inscrire à notre newsletter?"
     email: "Votre email"
-    get_news: "Keep it touch"
+    get_news: "Keep in touch"
     body: "Votre message"
 
   controllers:
