@@ -1,10 +1,10 @@
 #main-nav
     +flexbox
     +alignitems-center
-    padding: 1em 4em
     background: #fff
     z-index: 99
     width: 100%
+    margin: 0 auto
     +justifycontent-spacebetween
 
     @media all and (max-width: $screen-xs-max)
@@ -17,16 +17,12 @@
         text-decoration: none
 
     .left-nav
-        .logo-nav
-            max-width: 65px
-
-    .center-nav
         text-transform: uppercase
         font-weight: 700
         +flexbox
 
         a
-            margin: 0 .9rem
+            margin-right: .9rem
 
             &:hover
                 color: lighten($dark, 30%)
@@ -35,11 +31,15 @@
             +flex-grow(0)
             text-align: left
 
+    .center-nav
+        .logo-nav
+            max-width: 65px
+
     .social-links
-        // +flexbox
+        +flexbox
 
         img
-            // max-width: 30px
+            width: 25px
 
         a
             margin-left: 1rem
@@ -104,7 +104,11 @@
             margin-right: 1.5em
 
 .locale-switch-wrapper
-    padding: .2em 4em
+    position: absolute
+    right: 0
+    padding-right: .6em
+    top: 20px
+
     .locale-switch
         color: lighten($dark, 40%)
         font-size: .7em

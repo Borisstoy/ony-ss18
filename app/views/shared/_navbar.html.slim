@@ -1,11 +1,11 @@
 #main-nav
-  .left-nav
 
-    / = link_to root_path do
-    /   = image_tag 'ony-logo-dark.svg', class: 'logo-nav'
+  .left-nav
+    = render 'shared/navbar_links'
 
   .center-nav
-    = render 'shared/navbar_links'
+    / = link_to root_path do
+    /   = image_tag 'ony-logo-dark.svg', class: 'logo-nav'
 
   .social-links
     = render 'shared/social_links'

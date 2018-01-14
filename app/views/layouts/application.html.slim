@@ -23,18 +23,19 @@ html
     #modalContainer
     #modalOverlay
 
-    .locale-switch-wrapper
-      - if I18n.locale == I18n.default_locale
-        = link_to 'EN', { locale: 'en' }, { class: 'locale-switch' }
-      - else
-        = link_to 'FR', { locale: 'fr' }, { class: 'locale-switch' }
-
-    - unless controller_name == 'pages' && action_name == 'home'
-      = render 'shared/navbar'
-
     = render 'shared/flashes'
+
     #main-wrapper
+      - if action_name == 'home'
+      .locale-switch-wrapper
+        - if I18n.locale == I18n.default_locale
+          = link_to 'EN', { locale: 'en' }, { class: 'locale-switch' }
+        - else
+          = link_to 'FR', { locale: 'fr' }, { class: 'locale-switch' }
+
+      - unless controller_name == 'pages' && action_name == 'home'
+        = render 'shared/navbar'
       = yield
-    = render 'shared/footer'
+      = render 'shared/footer'
     = javascript_include_tag 'application'
     = render "shared/analytics"
