@@ -3,9 +3,10 @@
   .left-nav
     = render 'shared/navbar_links'
 
-  .center-nav
-    / = link_to root_path do
-    /   = image_tag 'ony-logo-dark.svg', class: 'logo-nav'
+  - unless action_name == 'home'
+    .center-nav
+      = link_to root_path do
+        = image_tag 'ony-logo-dark.svg', class: 'logo-nav'
 
   .social-links
     = render 'shared/social_links'
