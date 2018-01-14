@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :collections,
+                                                  :home,
                                                   :bleu_citron,
                                                   :velvet_underground,
                                                   :sphere,
@@ -7,6 +8,9 @@ class PagesController < ApplicationController
                                                   :contact,
                                                   :legals,
                                                   :terms_and_conditions ]
+
+  def home
+  end
 
   def ss18
   end

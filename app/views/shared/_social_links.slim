@@ -1,0 +1,13 @@
+= link_to 'https://www.facebook.com/ony.france', target: "blank", class: 'social-fb' do
+  = image_tag '003-facebook-logo-button.svg'
+  / .fa.fa-facebook
+= link_to 'https://www.instagram.com/ony_france/', target: "blank", class: 'social-insta' do
+  = image_tag '002-instagram-logo.svg'
+  / .fa.fa-instagram
+= link_to 'https://fr.pinterest.com/ony_mood/', target: "blank", class: 'social-pinterest' do
+  = image_tag '001-pinterest-logo-button.svg'
+  / .fa.fa-pinterest-p
+
+
+- if user_signed_in?
+  = link_to 'Admin Sign Out', destroy_user_session_path, method: :delete, class: 'admin-sign-out-btn'

@@ -1,9 +1,11 @@
 #main-nav
     +flexbox
     +alignitems-center
-    padding: 3em 4em
+    padding: 1em 4em
     background: #fff
     z-index: 99
+    width: 100%
+    +justifycontent-spacebetween
 
     @media all and (max-width: $screen-xs-max)
         display: none
@@ -15,73 +17,32 @@
         text-decoration: none
 
     .left-nav
-        +flex-grow(1)
-        text-align: left
-
-        @media all and (max-width: $screen-xs-max)
-            +flex-grow(0)
-
         .logo-nav
             max-width: 65px
 
     .center-nav
-        +flex-grow(2)
-        text-align: center
-
-        @media all and (max-width: $screen-xs-max)
-            +flex-grow(0)
-            text-align: left
+        text-transform: uppercase
+        font-weight: 700
+        +flexbox
 
         a
-            margin: 0 2%
+            margin: 0 .9rem
 
-    .right-nav
-        +flex-grow(1)
-        +alignitems-end
-        +flexbox
-        text-align: right
-        position: relative
-
-        .items-links
-            +flex-grow(1)
-            +flexbox
-            +justifycontent-end
-
-        .social-links
-            right: -145px
-            top: 45px
-            z-index: 98
-            +flexbox
-            position: absolute
-
-            a
-                margin-left: 1.5rem!important
-
-        .social-links, .items-links
-
-            a
-                margin: 0 2%
-                font-weight: 400
-                transition: .2s
-
-                &:hover
-                    color: lighten($dark, 60%)
-
-                &:last-child
-                    margin-right: 0
+            &:hover
+                color: lighten($dark, 30%)
 
         @media all and (max-width: $screen-xs-max)
             +flex-grow(0)
             text-align: left
 
-        .shopping-nav, .paper-plane-nav
-            max-width: 17px
+    .social-links
+        // +flexbox
 
-        .shopping-nav
-            margin-left: 8%
+        img
+            // max-width: 30px
 
-        .locale-switch
-            margin: 0 0 0 3%
+        a
+            margin-left: 1rem
 
 #mobile-nav-header
     +flexbox
@@ -141,3 +102,9 @@
 
         a
             margin-right: 1.5em
+
+.locale-switch-wrapper
+    padding: .2em 4em
+    .locale-switch
+        color: lighten($dark, 40%)
+        font-size: .7em

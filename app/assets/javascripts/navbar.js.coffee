@@ -18,8 +18,8 @@ $ ->
       mobileNav.removeClass('expanded')
       mobileNav.stop().slideUp(200)
 
-  if is_path('/') or is_path('/dyptique')
-    $(window).on 'scroll', ->
+  #if is_path('/') or is_path('/dyptique')
+    #$(window).on 'scroll', ->
       if $(window).scrollTop() >= 1
         $('#main-nav').slideUp(500)
         $('#on-scroll-nav-trigger').stop().animate 'margin-right':'0'
@@ -36,13 +36,3 @@ $ ->
   $('#onscroll-nav-close-btn').click ->
     $('body').css('overflow':'auto')
     $('#onscroll-nav').slideUp(300)
-
-  $('a#social-btn').click ->
-    $('.social-links').animate 'right':'28px'
-
-$(document).mouseup (e) ->
-  container = $('a#social-btn')
-
-  if !container.is(e.target) and container.has(e.target).length == 0
-    $('.social-links').animate 'right':'-145px'
-  return

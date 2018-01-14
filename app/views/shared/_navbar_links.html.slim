@@ -1,32 +1,9 @@
-.items-links
-  = link_to 'Shöp', 'http://onyfrance.tictail.com/', target: "blank"
-  = link_to 'Cöllections', root_path
-  = link_to t('about'), about_path
-  = link_to 'Cöntact', new_contact_path(@new_contact),
-                       class: 'openNewsletterBtn desktop-show',
-                       remote: true
+= link_to 'Shöp', 'http://onyfrance.tictail.com/', target: "blank"
+= link_to 'Cöllections', collections_path
+= link_to t('about'), about_path
+= link_to 'Cöntact', new_contact_path(@new_contact),
+                     class: 'openNewsletterBtn desktop-show',
+                     remote: true
 
-  = link_to 'Cöntact', new_contact_path(@new_contact), class: 'mobile-show'
-
-  a#social-btn= t('follow')
-.social-links
-  = link_to 'https://www.facebook.com/ony.france', target: "blank", class: 'social-fb' do
-    .fa.fa-facebook
-  = link_to 'https://www.instagram.com/ony_france/', target: "blank", class: 'social-insta' do
-    .fa.fa-instagram
-  = link_to 'https://fr.pinterest.com/ony_mood/', target: "blank", class: 'social-pinterest' do
-    .fa.fa-pinterest-p
-
-- if I18n.locale == I18n.default_locale
-  = link_to 'EN', { locale: 'en' }, { class: 'locale-switch' }
-- else
-  = link_to 'FR', { locale: 'fr' }, { class: 'locale-switch' }
-
-- if user_signed_in?
-  = link_to 'Admin Sign Out', destroy_user_session_path, method: :delete, class: 'admin-sign-out-btn'
-  / = link_to contact_path do
-  /   = image_tag 'paper-plane.svg', class: 'paper-plane-nav'
-
-  / = link_to 'http://onyfrance.tictail.com/', target: "blank" do
-  /   = image_tag 'shopping-bag.svg', class: 'shopping-nav'
+= link_to 'Cöntact', new_contact_path(@new_contact), class: 'mobile-show'
 

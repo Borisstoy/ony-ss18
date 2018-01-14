@@ -1,10 +1,30 @@
 /* -------------------------------------
  * Fonts
  * ------------------------------------- */
-// Google fonts
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,700');
-$base-font: "Lato", "Helvetica", "sans-serif";
-$header-font: "Oswald", "Helvetica", "sans-serif";
+
+@font-face {
+  font-family: 'Gotham';
+  src: font-url('Gotham-Bold.otf') format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: font-url('Gotham-Book-Regular.otf') format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: font-url('Gotham-Light.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$base-font: "Gotham", "Helvetica", "sans-serif";
+$header-font: "Gotham", "Helvetica", "sans-serif";
 
 // Local fonts (uncomment following lines)
 // @font-face {
@@ -32,3 +52,4 @@ $yellow: #FDB631;
 $orange: #E67E22;
 $green: #32B796;
 $gray: #000000;
+
