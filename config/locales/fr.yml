@@ -6,6 +6,9 @@ fr:
   legal: "Mentions légales"
   t_and_c: "Termes & Conditions"
   pages:
+    home:
+      one: "[n.m métaphorique: une oeuvre en deux parties qui s'opposent et se complètent.]"
+
     lookbook:
     sphere:
     about:

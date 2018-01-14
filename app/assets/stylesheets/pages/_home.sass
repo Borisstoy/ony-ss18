@@ -1,11 +1,14 @@
 #dyptique-wrapper
+    margin: 7rem 0
+    overflow: auto
+
     .dyptique-left-container
         width: 50%
         float: left
         text-align: right
 
         .ony-dyptique-3
-            max-width: 60%
+            max-width: 68%
 
     .dyptique-right-container
         float: right
@@ -14,15 +17,89 @@
 
         .text-container
             position: absolute
-            width: 53%
-            top: 115px
+            background: #fff
+            padding: 1.5em
+            width: 58%
+            top: 100px
             left: -35px
             h2
                 font-weight: 800
 
+#mondrian-wrapper
+    margin: 7rem 0
+    overflow: auto
+    position: relative
+    overflow-y: hidden
+    width: 75%
+    background: $red
+
+    .mondrian-left
+        width: 70%
+
+        img
+            max-width: 82%
+            border-left: 100px solid $red
+            border-top: 50px solid $red
+            border-bottom: 50px solid $red
+
 #draw-your-identity-wrapper
+    position: relative
+    width: 100%
+    margin: 7rem 0
+
+    .draw-square
+        width: 355px
+        height: 355px
+        right: 150px
+        bottom: 5px
+        position: absolute
+        background: #fff
+        border: 6px solid $dark
+
+        p
+            font-size: 2.1em
+            font-weight: 500
+            margin: 0
+            position: absolute
+            left: 0
+            right: 0
+            text-align: center
+            font-weight: 700
+
+        p:nth-child(1)
+            top: 0
+            margin-top: 1rem
+
+        p:nth-child(2)
+            top: 40%
+
+        p:nth-child(3)
+            bottom: 0
+            margin-bottom: 1rem
 
 #the-teddy-wrapper
+    width: 100%
+    overflow: auto
+    margin: 18rem 0 7rem 0
+
+    .teddy-left
+        width: 50%
+        float: left
+
+        .ony-dyptique-5
+            max-width: 75%
+
+    .teddy-right
+        width: 50%
+        float: right
+
+        .yellow-square
+            background: $yellow
+            width: 300px
+            height: 250px
+
+        .ony-dyptique-6
+            max-width: 60%
 
 #unisex-wrapper
 
