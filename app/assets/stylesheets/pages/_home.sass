@@ -84,7 +84,7 @@
 
 #the-teddy-wrapper
     width: 100%
-    overflow: auto
+    overflow: hidden
     margin: 17rem 0
 
     .the-teddy-left
@@ -100,6 +100,8 @@
                 position: absolute
                 right: 180px
                 top: -30px
+                white-space: nowrap
+
                 h2
                     font-weight: 800
 
@@ -131,6 +133,55 @@
                 max-width: 410px
 
 #the-sweat-wrapper
+    width: 100%
+    overflow: hidden
+    
+    .the-sweat-left
+        width: 50%
+        float: left
+        text-align: right
+
+        .container-sweat-yellow
+            padding-right: 2em
+            
+            .ony-dyptique-1
+                max-width: 410px
+
+    .the-sweat-right
+        width: 50%
+        float: right
+        
+        .container-sweat-dos-face
+            position: relative
+            left: 0
+            top: 95px
+
+            .sweat-title
+                position: absolute
+                left: 0
+                top: -30px
+                white-space: nowrap
+
+                h2
+                    font-weight: 800
+
+            .ony-dyptique-sweat-profil
+                max-width: 220px
+                position: absolute
+                left: 0
+                top: 100px
+
+            .ony-dyptique-sweat-dos
+                max-width: 220px
+                position: absolute
+                z-index: 99
+                left: 205px
+                top: 0px
+        
+            .sweat-desc
+                position: absolute
+                top: 465px
+                right: 175px
 
 #unisex-wrapper
     width: 100%
