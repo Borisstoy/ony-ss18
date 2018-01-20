@@ -26,57 +26,61 @@
                 font-weight: 800
 
 #mondrian-wrapper
-    margin: 7rem 0
-    overflow: auto
-    position: relative
-    overflow-y: hidden
-    width: 75%
-    background: $red
-
-    .mondrian-left
-        width: 70%
-
-        img
-            max-width: 82%
-            border-left: 100px solid $red
-            border-top: 50px solid $red
-            border-bottom: 50px solid $red
-
-#draw-your-identity-wrapper
-    position: relative
+    overflow: hidden
+    height: 600px
     width: 100%
-    margin: 7rem 0
+    padding: 5em 0
+    margin: 10rem 0 0 0
 
-    .draw-square
-        width: 355px
-        height: 355px
-        right: 150px
-        bottom: 5px
-        position: absolute
-        background: #fff
-        border: 6px solid $dark
+    .mondrian-sqaures-container
+        position: relative
+        right: 110px
 
-        p
-            font-size: 2.1em
-            font-weight: 500
-            margin: 0
+        .red-square
+            background: $red
             position: absolute
-            left: 0
-            right: 0
-            text-align: center
-            font-weight: 700
+            width: 680px
+            height: 390px
+            right: 325px
+            top: 5px
 
-        p:nth-child(1)
-            top: 0
-            margin-top: 1rem
+        .mondrian-picto
+            position: absolute
+            right: 545px
+            top: -20px
 
-        p:nth-child(2)
-            top: 40%
+            img
+                max-width: 355px
 
-        p:nth-child(3)
-            bottom: 0
-            margin-bottom: 1rem
+        .draw-square
+            width: 355px
+            height: 355px
+            right: 125px
+            bottom: -500px
+            position: absolute
+            background: #fff
+            border: 6px solid $dark
 
+            p
+                font-size: 2.1em
+                font-weight: 500
+                margin: 0
+                position: absolute
+                left: 0
+                right: 0
+                text-align: center
+                font-weight: 700
+
+            p:nth-child(1)
+                top: 0
+                margin-top: 1rem
+
+            p:nth-child(2)
+                top: 40%
+
+            p:nth-child(3)
+                bottom: 0
+                margin-bottom: 1rem
 
 #the-teddy-wrapper
     width: 100%
@@ -126,6 +130,8 @@
             .ony-dyptique-7
                 max-width: 410px
 
+#the-sweat-wrapper
+
 #unisex-wrapper
     width: 100%
     overflow: auto
@@ -149,5 +155,7 @@
 
         .ony-dyptique-6
             max-width: 60%
+
+#contact-wrapper
 
 #news-social-wrapper
