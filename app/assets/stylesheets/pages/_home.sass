@@ -223,10 +223,86 @@
             top: 275px
 
 #contact-wrapper
+    height: 630px
+    overflow: hidden
+    margin-top: 12rem
+
+    .contact-container
+        .contact-left
+            float: left
+            width: 50%
+            text-align: right
+            position: relative
+
+            .contact-wrapper-button
+                position: absolute
+                color: #fff
+                font-size: 2em
+                font-weight: 700
+                right: 145px
+                bottom: 50px
+
+            .diagonal-shape
+                text-align: right
+                position: relative
+                right: -1px
+                top: 293px
+
+        .contact-right
+            width: 50%
+            float: right
+            position: relative
+
+            .ony-dyptique-4
+                text-align: left
+                max-width: 420px
+
+    .diagonal-text-container
+        transform: rotate(-27deg)
+        position: absolute
+        width: 500px
+        text-align: left
+
+        .keep-me-updated
+            position: relative
+            white-space: nowrap
+            margin-left: -1000px
+            -webkit-animation: leftToRight 3s infinite
+            font-size: 2em
+            font-weight: 700
+        
+        .kmu-animation-delay-red
+            animation-delay: 0
+        .kmu-animation-delay-blue
+            animation-delay: 1s
+        .kmu-animation-delay-yellow
+            animation-delay: .5s
+
+    .diagonal-text-red
+        right: 0
+        top: 370px
+        color: $red
+    
+    .diagonal-text-blue
+        right: 0
+        top: 265px
+        color: $blue
+
+    .diagonal-text-yellow
+        right: 0
+        top: 175px
+        color: $yellow
+
+@-webkit-keyframes leftToRight 
+    0%   
+        margin-right: -200px
+    100% 
+        margin-left: 700px
 
 #news-social-wrapper
     width: 100%
     height: 600px
+    margin: 15rem 0
     
     .social-left
         float: left
@@ -262,7 +338,6 @@
                     text-decoration: none
                     letter-spacing: 0.2em
 
-    
     .social-right
         float: right
         width: 50%

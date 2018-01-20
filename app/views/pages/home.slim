@@ -60,6 +60,22 @@
     = image_tag 'dyptique/ONY_CAMPAGNESS18_6.jpg', class: 'ony-dyptique-6'
 
 #contact-wrapper
+  .contact-container
+    .contact-left
+      .diagonal-text-container.diagonal-text-red
+        span.keep-me-updated.kmu-animation-delay-red="keep me updated"
+      .diagonal-text-container.diagonal-text-blue
+        span.keep-me-updated.kmu-animation-delay-blue="keep me updated"
+      .diagonal-text-container.diagonal-text-yellow
+        span.keep-me-updated.kmu-animation-delay-yellow="keep me updated"
+      = image_tag 'diagonal-shape.svg', class: 'diagonal-shape'
+      = link_to 'Cöntact', new_contact_path(@new_contact), class: 'contact-wrapper-button mobile-show'
+      = link_to 'Cöntact', new_contact_path(@new_contact),
+                          class: 'contact-wrapper-button openNewsletterBtn desktop-show',
+                          remote: true
+    .contact-right
+      = image_tag 'dyptique/ONY_CAMPAGNESS18_4.jpg', class: 'ony-dyptique-4'
+
 
 #news-social-wrapper
   .social-left
