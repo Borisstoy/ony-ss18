@@ -225,3 +225,49 @@
 #contact-wrapper
 
 #news-social-wrapper
+    width: 100%
+    height: 600px
+    
+    .social-left
+        float: left
+        width: 50%
+        height: 100%
+        +flexbox
+        +alignitems-center
+        +justifycontent-center
+
+        .social-links-container
+            +flexbox
+            +flexdirection-column
+            text-align: center
+
+            .social-pinterest
+                padding-bottom: 1em
+                border-bottom: 5px solid $dark
+                margin-bottom: 3rem
+
+            a
+                color: $dark
+                font-weight: 700
+                font-size: 2.2em
+
+            .socialLink
+                -webkit-transition: all .3s ease-in
+                -moz-transition: all .3s ease-in
+                -ms-transition: all .3s ease-in
+                -o-transition: all .3s ease-in
+                transition: all .3s ease-in
+
+                &:hover
+                    text-decoration: none
+                    letter-spacing: 0.2em
+
+    
+    .social-right
+        float: right
+        width: 50%
+        text-align: left
+        position: relative
+
+        .ony-dyptique-2
+            max-width: 420px

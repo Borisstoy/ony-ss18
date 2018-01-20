@@ -62,3 +62,21 @@
 #contact-wrapper
 
 #news-social-wrapper
+  .social-left
+    .social-links-container
+      = link_to 'https://www.facebook.com/ony.france', target: "blank", class: 'socialLink social-fb' do
+        span= "facebook"
+      = link_to 'https://www.instagram.com/ony_france/', target: "blank", class: 'socialLink social-insta' do
+        spam= "instagram"
+      = link_to 'https://fr.pinterest.com/ony_mood/', target: "blank", class: 'socialLink social-pinterest' do
+        spam= "pinterest"
+
+      = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
+                                         class: 'openNewsletterBtn desktop-show',
+                                         remote: true
+
+      = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
+                                          class: 'mobile-show'
+
+  .social-right
+    = image_tag 'dyptique/ONY_CAMPAGNESS18_2.jpg', class: 'ony-dyptique-2'
