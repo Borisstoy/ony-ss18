@@ -17,4 +17,7 @@
 #navMobile
   = link_to root_path do
     = image_tag 'ony-logo-dark.svg', class: 'logo-nav'
-  = render 'shared/navbar_links'
+  .nav-mobile-link-wrapper
+    = render 'shared/navbar_links'
+  .social-links
+    = render 'shared/social_links'

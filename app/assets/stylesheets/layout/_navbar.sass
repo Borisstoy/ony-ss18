@@ -24,7 +24,7 @@
         z-index: 9999999
 
         a
-            margin-right: .9rem
+            margin-right: 1.9rem
 
             &:hover
                 color: lighten($dark, 30%)
@@ -47,6 +47,9 @@
 
         img
             width: 25px
+
+            &:hover
+                color: lighten($dark, 20%)
 
         a
             margin-left: 1rem
@@ -104,17 +107,21 @@
         margin-left: 0
 
     .social-links
-        +flex-grow(0)
         +flexbox
-
-        a
-            margin-right: 1.5em
+        +flexdirection-column
+        
+        img
+            max-width: 35px
 
 .locale-switch-wrapper
     position: absolute
     right: 0
     padding-right: .6em
     top: 20px
+
+    @media all and (max-width: $screen-sm-min)
+        left: 40px
+        width: 50px
 
     .locale-switch
         color: lighten($dark, 40%)
@@ -138,3 +145,7 @@
     
     .logo-on-scroll-nav
         max-width: 60px
+
+.nav-mobile-link-wrapper
+    +flexbox
+    +flexdirection-column

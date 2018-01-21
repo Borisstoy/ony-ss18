@@ -1,0 +1,29 @@
+#about-wrapper
+    .row
+        .col-md-6.col-xs-12.text-right
+            .about-blue-container
+                .col.xs-12.text-xs-center
+                    = image_tag 'ony-audrey-founder.jpg', class: 'ony-founder'
+                .col.xs-12.text-xs-center
+                    = image_tag 'pigment-bleu.png', class: 'pigment-bleu'
+                .col-xs-12.text-xs-center
+                    .about-blue-square
+        .col-md-6.col-xs-12
+            .about-the-brand
+                = t('.the_brand').html_safe
+
+    .row{style='margin-top: 9rem'}
+        .col-md-4.col-xs-12
+            .about-red-text
+                = t('.the_creativity').html_safe
+        .col-md-4.col-xs-12
+            .about-red-square
+        .col-md-4.col-xs-12.text-xs-center
+            = image_tag 'pigment-rouge.png', class: 'pigment-rouge'
+    
+    .row{style='margin-top: 9rem'}
+        .col-md-4.col-md-offset-2.col-xs-12.text-xs-center
+            = image_tag 'pigment-jaune.png', class: 'pigmentjaune'
+        .col-md-4.col-xs-12
+            .about-yellow-container
+                = t('.the_collection').html_safe

@@ -4,6 +4,14 @@ $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-max: 1024px;
 
+@media (max-width: 767px) {
+
+  // Align text to center.
+  .text-xs-center {
+    text-align: center;
+  } 
+}
+
 // table media query
 
 @mixin responsive-ipad-protrait {

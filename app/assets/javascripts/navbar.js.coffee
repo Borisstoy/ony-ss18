@@ -10,6 +10,7 @@ $ ->
 
     if !mobileNav.hasClass('expanded')
       mobileNav.addClass('expanded')
+      mobileNav.animate 'display':'flex'
       mobileNav.stop().slideDown(200)
     else
       mobileNav.removeClass('expanded')

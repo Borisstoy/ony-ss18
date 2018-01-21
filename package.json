@@ -4,6 +4,7 @@
   "dependencies": {
     "browserify": "14.5.0",
     "browserify-incremental": "^3.1.1",
+    "jquery": "^3.3.1",
     "scrollreveal": "^3.3.6",
     "slick-carousel": "^1.8.1",
     "typed.js": "^2.0.6"
