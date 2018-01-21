@@ -24,6 +24,10 @@ html
     #modalOverlay
 
     = render 'shared/flashes'
+    
+    .logo-on-scroll-nav-container
+      = link_to root_path do
+          = image_tag 'ony-logo-dark.svg', class: 'logo-on-scroll-nav'
 
     #main-wrapper
       - if action_name == 'home'
