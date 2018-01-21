@@ -9,7 +9,7 @@ html
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /
     script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"
     script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"
-
+    link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
 
     = stylesheet_link_tag    'application', media: 'all'
     = favicon_link_tag 'favicon-ony.png'
@@ -29,7 +29,8 @@ html
       = link_to root_path do
           = image_tag 'ony-logo-dark.svg', class: 'logo-on-scroll-nav'
 
-    #main-wrapper
+    #main-wrapper class="#{ 'full-height' if action_name == 'collections' }"
+
       - if action_name == 'home'
       .locale-switch-wrapper
         - if I18n.locale == I18n.default_locale
@@ -38,8 +39,10 @@ html
           = link_to 'FR', { locale: 'fr' }, { class: 'locale-switch' }
 
       - unless controller_name == 'pages' && action_name == 'home'
-        = render 'shared/navbar'
+        #header
+          = render 'shared/navbar'
       = yield
       = render 'shared/footer'
+
     = javascript_include_tag 'application'
     = render "shared/analytics"

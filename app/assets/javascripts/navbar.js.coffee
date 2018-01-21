@@ -1,9 +1,6 @@
 $ ->
   mobileNav   = $('#navMobile')
 
-  is_path = (path) ->
-    window.location.pathname == path
-
   if $(window).width() > 767
     mobileNav.hide()
 
@@ -37,29 +34,35 @@ $ ->
     $('body').css('overflow':'auto')
     $('#onscroll-nav').slideUp(300)
 
-$ ->
+  is_path = (path) ->
+    window.location.pathname == path
+  
   $(window).on 'scroll', ->
   
-    header        = $('#header')
-    scrollTop     = $(window).scrollTop()
-    headerOffset  = header.offset().top
-    distance      = (headerOffset - scrollTop)
-    banner = $(".home-video-banner")
-    header_top = header.offset().top
-    banner_top = banner.offset().top
-    header_bottom = header_top + header.height()
-    banner_bottom = banner_top + banner.height()
-    
-    if distance < 0
-      header.addClass 'fixed-header'
+    if is_path('/')
 
-      $('.logo-on-scroll-nav-container').animate {
-        top: '20px'
-      }
-    else if header_bottom >= banner_top && 
-              headerOffset < banner_bottom
-      header.removeClass 'fixed-header'  
-      $('.logo-on-scroll-nav-container').animate {
-        top: '-35px'
-      }
+      header        = $('#header')
+      scrollTop     = $(window).scrollTop()
+      headerOffset  = header.offset().top
+      distance      = (headerOffset - scrollTop)
+      banner        = $(".home-video-banner")
+      header_top    = header.offset().top
+      banner_top    = banner.offset().top
+      header_bottom = header_top + header.height()
+      banner_bottom = banner_top + banner.height()
     
+      if distance < 0
+        header.addClass 'fixed-header'
+
+        $('.logo-on-scroll-nav-container')
+          .animate
+            top: '20px'
+
+      else if header_bottom >= banner_top && 
+                headerOffset < banner_bottom
+        header.removeClass 'fixed-header'  
+        $('.logo-on-scroll-nav-container')
+          .animate 
+            top: '-45px'
+
+      

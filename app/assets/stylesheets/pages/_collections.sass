@@ -1,0 +1,42 @@
+#collections-wrapper
+    width: 100%
+
+    #collections-nav
+        width: 30%
+        float: left
+        +flexbox
+        +justifycontent-center
+        +flexdirection-column
+        height: calc(100vh - 145px)
+        position: absolute
+        left: 0
+        padding-left: .6em
+
+        span.collection-navlinks
+            font-size: 1.6em
+            font-weight: 700
+
+    #collection-slider-container
+        width: 100%
+        float: right
+
+        .collection-slider
+            +flexbox
+            overflow-x: scroll
+            overflow-y: hidden
+            height: calc(100vh - 120px)
+
+        .collection-slider::-webkit-scrollbar 
+            width: 0px
+            background: transparent
+
+        .collection-visu-container
+            height: calc(100vh - 145px)
+
+            .visu-collection
+                margin: auto 
+                min-height: 100%
+                min-width: 100%                
+
+#velvet-wrapper, #bleu-citron-wrapper, #dyptique-wrapper
+
