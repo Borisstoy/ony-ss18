@@ -67,6 +67,7 @@
 
     @media all and (max-width: $screen-sm-min)
         +flexbox
+        padding: 0
 
     #mobile-nav-trigger
         max-width: 35px
@@ -109,6 +110,14 @@
     .social-links
         +flexbox
         +flexdirection-column
+
+        @media all and (max-width: $screen-sm-min)
+            dispplay: block
+            margin: 2rem 0 0
+
+            a
+                @media all and (max-width: $screen-sm-min)
+                    margin-right: 2rem
         
         img
             max-width: 35px
@@ -120,7 +129,7 @@
     top: 20px
 
     @media all and (max-width: $screen-sm-min)
-        left: 40px
+        left: 15px
         width: 50px
 
     .locale-switch
