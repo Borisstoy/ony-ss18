@@ -11,13 +11,4 @@
   .social-links
     = render 'shared/social_links'
 
-#mobile-nav-header
-  = image_tag 'menu.svg', id: 'mobile-nav-trigger'
-
-#navMobile
-  = link_to root_path do
-    = image_tag 'ony-logo-dark.svg', class: 'logo-nav'
-  .nav-mobile-link-wrapper
-    = render 'shared/navbar_links'
-  .social-links
-    = render 'shared/social_links'
+= render 'shared/mobile_nav'

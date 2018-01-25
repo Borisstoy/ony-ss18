@@ -8,93 +8,94 @@
 #header.hide-on-small-devise
   = render 'shared/navbar'
 
-#dyptique-wrapper
-  .dyptique-left-container
-    = image_tag 'dyptique/ONY_CAMPAGNESS18_3.jpg', class: 'ony-dyptique-3'
-  .dyptique-right-container
-    .text-container
-      h2= "Dyptique"
-      h2= "SS.18"
-      p= t('.one')
+#home-main-wrapper
+  #dyptique-wrapper
+    .dyptique-left-container
+      = image_tag 'dyptique/ONY_CAMPAGNESS18_3.jpg', class: 'ony-dyptique-3'
+    .dyptique-right-container
+      .text-container
+        h2= "Dyptique"
+        h2= "SS.18"
+        p= t('.one')
 
-#mondrian-wrapper
-  .mondrian-sqaures-container
-    .red-square
-    .mondrian-picto
-      = image_tag 'dyptique/mondrian-lego.jpg', class: 'modrian-lego'
-    .draw-square
-      p.drawYourIdentity= "draw your identity"
-      p.drawYourIdentity= "draw your identity"
-      p.drawYourIdentity= "draw your identity"
+  #mondrian-wrapper
+    .mondrian-squares-container
+      .red-square
+      .mondrian-picto
+        = image_tag 'dyptique/mondrian-lego.jpg', class: 'modrian-lego'
+      .draw-square
+        p.drawYourIdentity= "draw your identity"
+        p.drawYourIdentity= "draw your identity"
+        p.drawYourIdentity= "draw your identity"
 
-#the-teddy-wrapper
-  .the-teddy-left
-    .container-teddy-dos-face
-      .teddy-title    
-        h2= t('.teddy-title')
-      = image_tag 'dyptique/teddy-TERI-rouge-dos.jpg', class: 'ony-dyptique-teddy-dos'
-      = image_tag 'dyptique/teddy-TERI-rouge-face.jpg', class: 'ony-dyptique-teddy-face'
-      .teddy-desc
-        p= t('.teddy-desc')
-  .the-teddy-right
-    .container-teddy-yellow
-      = image_tag 'dyptique/ONY_CAMPAGNESS18_7.jpg', class: 'ony-dyptique-7'
+  #the-teddy-wrapper
+    .the-teddy-left
+      .container-teddy-dos-face
+        .teddy-title    
+          h2= t('.teddy-title')
+        = image_tag 'dyptique/teddy-TERI-rouge-dos.jpg', class: 'ony-dyptique-teddy-dos'
+        = image_tag 'dyptique/teddy-TERI-rouge-face.jpg', class: 'ony-dyptique-teddy-face'
+        .teddy-desc
+          p= t('.teddy-desc')
+    .the-teddy-right
+      .container-teddy-yellow
+        = image_tag 'dyptique/ONY_CAMPAGNESS18_7.jpg', class: 'ony-dyptique-7'
 
-#the-sweat-wrapper
-  .the-sweat-left
-    .container-sweat-yellow
-      = image_tag 'dyptique/ONY_CAMPAGNESS18_1.jpg', class: 'ony-dyptique-1'
-  .the-sweat-right
-    .container-sweat-dos-face
-      .sweat-title    
-        h2= t('.sweat-title')
-      = image_tag 'dyptique/sweater-MONDRIAN-rouge-dos.jpg', class: 'ony-dyptique-sweat-dos'
-      = image_tag 'dyptique/sweater-MONDRIAN-profil.jpg', class: 'ony-dyptique-sweat-profil'
-      .sweat-desc
-        p= t('.sweat-desc')
+  #the-sweat-wrapper
+    .the-sweat-left
+      .container-sweat-yellow
+        = image_tag 'dyptique/ONY_CAMPAGNESS18_1.jpg', class: 'ony-dyptique-1'
+    .the-sweat-right
+      .container-sweat-dos-face
+        .sweat-title    
+          h2= t('.sweat-title')
+        = image_tag 'dyptique/sweater-MONDRIAN-rouge-dos.jpg', class: 'ony-dyptique-sweat-dos'
+        = image_tag 'dyptique/sweater-MONDRIAN-profil.jpg', class: 'ony-dyptique-sweat-profil'
+        .sweat-desc
+          p= t('.sweat-desc')
 
-#unisex-wrapper
-  .unisex-left
-    = image_tag 'dyptique/ONY_CAMPAGNESS18_5.jpg', class: 'ony-dyptique-5'
-  .unisex-right
-    .yellow-square
-      p= t('.unisex-title')
-    = image_tag 'dyptique/ONY_CAMPAGNESS18_6.jpg', class: 'ony-dyptique-6'
+  #unisex-wrapper
+    .unisex-left
+      = image_tag 'dyptique/ONY_CAMPAGNESS18_5.jpg', class: 'ony-dyptique-5'
+    .unisex-right
+      .yellow-square
+        p= t('.unisex-title')
+      = image_tag 'dyptique/ONY_CAMPAGNESS18_6.jpg', class: 'ony-dyptique-6'
 
-#contact-wrapper
-  .contact-container
-    .contact-left
-      .diagonal-text-container.diagonal-text-red
-        span.keep-me-updated.kmu-animation-delay-red="keep me updated"
-      .diagonal-text-container.diagonal-text-blue
-        span.keep-me-updated.kmu-animation-delay-blue="keep me updated"
-      .diagonal-text-container.diagonal-text-yellow
-        span.keep-me-updated.kmu-animation-delay-yellow="keep me updated"
-      = image_tag 'diagonal-shape.svg', class: 'diagonal-shape'
-      = link_to 'Cöntact', new_contact_path(@new_contact), class: 'contact-wrapper-button mobile-show'
-      = link_to 'Cöntact', new_contact_path(@new_contact),
-                          class: 'contact-wrapper-button openNewsletterBtn desktop-show',
-                          remote: true
-    .contact-right
-      = image_tag 'dyptique/ONY_CAMPAGNESS18_4.jpg', class: 'ony-dyptique-4'
+  #contact-wrapper
+    .contact-container
+      .contact-left
+        .diagonal-text-container.diagonal-text-red
+          span.keep-me-updated.kmu-animation-delay-red="keep me updated"
+        .diagonal-text-container.diagonal-text-blue
+          span.keep-me-updated.kmu-animation-delay-blue="keep me updated"
+        .diagonal-text-container.diagonal-text-yellow
+          span.keep-me-updated.kmu-animation-delay-yellow="keep me updated"
+        = image_tag 'diagonal-shape.svg', class: 'diagonal-shape'
+        = link_to 'Cöntact', new_contact_path(@new_contact), class: 'contact-wrapper-button mobile-show'
+        = link_to 'Cöntact', new_contact_path(@new_contact),
+                            class: 'contact-wrapper-button openNewsletterBtn desktop-show',
+                            remote: true
+      .contact-right
+        = image_tag 'dyptique/ONY_CAMPAGNESS18_4.jpg', class: 'ony-dyptique-4'
 
 
-#news-social-wrapper
-  .social-left
-    .social-links-container
-      = link_to 'https://www.facebook.com/ony.france', target: "blank", class: 'socialLink social-fb' do
-        span= "facebook"
-      = link_to 'https://www.instagram.com/ony_france/', target: "blank", class: 'socialLink social-insta' do
-        spam= "instagram"
-      = link_to 'https://fr.pinterest.com/ony_mood/', target: "blank", class: 'socialLink social-pinterest' do
-        spam= "pinterest"
+  #news-social-wrapper
+    .social-left
+      .social-links-container
+        = link_to 'https://www.facebook.com/ony.france', target: "blank", class: 'socialLink social-fb' do
+          span= "facebook"
+        = link_to 'https://www.instagram.com/ony_france/', target: "blank", class: 'socialLink social-insta' do
+          spam= "instagram"
+        = link_to 'https://fr.pinterest.com/ony_mood/', target: "blank", class: 'socialLink social-pinterest' do
+          spam= "pinterest"
 
-      = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
-                                         class: 'openNewsletterBtn desktop-show',
-                                         remote: true
+        = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
+                                          class: 'openNewsletterBtn desktop-show',
+                                          remote: true
 
-      = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
-                                          class: 'mobile-show'
+        = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
+                                            class: 'mobile-show'
 
-  .social-right
-    = image_tag 'dyptique/ONY_CAMPAGNESS18_2.jpg', class: 'ony-dyptique-2'
+    .social-right
+      = image_tag 'dyptique/ONY_CAMPAGNESS18_2.jpg', class: 'ony-dyptique-2'

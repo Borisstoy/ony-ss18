@@ -1,3 +1,17 @@
+#home-main-wrapper
+    p
+        @media all and (max-width: $screen-xs-max)
+            font-size: 1.1em
+            margin: 1rem 0
+
+    h2
+        @media all and (max-width: $screen-xs-max)
+            text-align: center
+            margin: 4rem 0
+
+    img
+        @media all and (max-width: $screen-xs-max)
+            margin-bottom: 1rem
 #dyptique-wrapper
     margin: 7rem 0
     overflow: auto
@@ -7,13 +21,24 @@
         float: left
         text-align: right
 
+        @media all and (max-width: $screen-xs-max)
+            width: 100%
+            float: none
+
         .ony-dyptique-3
             max-width: 400px
+
+            @media all and (max-width: $screen-xs-max)
+                max-width: 100%
 
     .dyptique-right-container
         float: right
         width: 50%
         position: relative
+
+        @media all and (max-width: $screen-xs-max)
+            float: none
+            width: 100%
 
         .text-container
             position: absolute
@@ -25,6 +50,10 @@
             h2
                 font-weight: 800
 
+            @media all and (max-width: $screen-xs-max)
+                position: initial
+                width: 100%
+
 #mondrian-wrapper
     overflow: hidden
     height: 600px
@@ -32,9 +61,18 @@
     padding: 5em 0
     margin: 10rem 0 0 0
 
-    .mondrian-sqaures-container
+    @media all and (max-width: $screen-xs-max)
+        margin: 0
+        height: auto
+        padding: 1em 0
+        overflow: auto
+
+    .mondrian-squares-container
         position: relative
         right: 110px
+
+        @media all and (max-width: $screen-sm-min)
+            position: initial
 
         .red-square
             background: $red
@@ -44,13 +82,24 @@
             right: 325px
             top: 5px
 
+            @media all and (max-width: $screen-xs-max)
+                position: initial  
+                width: 100%
+                max-height: auto          
+
         .mondrian-picto
             position: absolute
             right: 545px
             top: -20px
 
+            @media all and (max-width: $screen-xs-max)
+                position: initial 
+
             img
                 max-width: 355px
+
+                @media all and (max-width: $screen-xs-max)
+                    max-width: 100%
 
         .draw-square
             width: 355px
@@ -61,6 +110,11 @@
             background: #fff
             border: 6px solid $dark
 
+            @media all and (max-width: $screen-xs-max)
+                position: initial
+                width: 100%
+                height: auto
+
             p
                 font-size: 2.1em
                 font-weight: 500
@@ -70,6 +124,8 @@
                 right: 0
                 text-align: center
                 font-weight: 700
+
+                position: initial
 
             p:nth-child(1)
                 top: 0
@@ -87,20 +143,34 @@
     overflow: hidden
     margin: 17rem 0
 
+    @media all and (max-width: $screen-xs-max)
+        margin: 1rem 0
+        overflow: auto
+
     .the-teddy-left
         width: 50%
         float: left
+
+        @media all and (max-width: $screen-xs-max)
+            width: 100%
+            float: none
 
         .container-teddy-dos-face
             position: relative
             left: 145px
             top: 95px
 
+            @media all and (max-width: $screen-xs-max)  
+                position: initial
+
             .teddy-title
                 position: absolute
                 right: 180px
                 top: -30px
                 white-space: nowrap
+                
+                @media all and (max-width: $screen-xs-max)  
+                    position: initial
 
                 h2
                     font-weight: 800
@@ -111,57 +181,100 @@
                 right: 380px
                 top: 0px
 
+                @media all and (max-width: $screen-xs-max)  
+                    position: initial
+                    max-width: 100%
+
             .ony-dyptique-teddy-dos
                 max-width: 220px
                 position: absolute
                 z-index: 99
                 right: 175px
                 top: 100px
+
+                @media all and (max-width: $screen-xs-max)  
+                    position: initial
+                    max-width: 100%
         
             .teddy-desc
                 position: absolute
                 top: 465px
                 right: 175px
 
+                @media all and (max-width: $screen-xs-max)  
+                    position: initial
+
     .the-teddy-right
         width: 50%
         float: right
+
+        @media all and (max-width: $screen-xs-max)  
+            float: none
+            width: 100%
 
         .container-teddy-yellow
 
             .ony-dyptique-7
                 max-width: 410px
 
+                @media all and (max-width: $screen-xs-max)  
+                    max-width: 100%
+
 #the-sweat-wrapper
     width: 100%
     overflow: hidden
     height: 640px
+
+    @media all and (max-width: $screen-xs-max)
+        height: auto
+        overflow: auto
     
     .the-sweat-left
         width: 50%
         float: left
         text-align: right
 
+        @media all and (max-width: $screen-xs-max)
+            width: 100%
+            float: none
+            text-align: left
+
         .container-sweat-yellow
             padding-right: 2em
+
+            @media all and (max-width: $screen-xs-max)
+                padding-right: 0
 
             .ony-dyptique-1
                 max-width: 410px
 
+                @media all and (max-width: $screen-xs-max)
+                    max-width: 100%
+
     .the-sweat-right
         width: 50%
         float: right
+
+        @media all and (max-width: $screen-xs-max)
+            width: 100%
+            float: none
         
         .container-sweat-dos-face
             position: relative
             left: 0
             top: 95px
 
+            @media all and (max-width: $screen-xs-max)
+                position: initial
+
             .sweat-title
                 position: absolute
                 left: 0
                 top: -30px
                 white-space: nowrap
+
+                @media all and (max-width: $screen-xs-max)
+                    position: initial
 
                 h2
                     font-weight: 800
@@ -172,17 +285,28 @@
                 left: 0
                 top: 100px
 
+                @media all and (max-width: $screen-xs-max)
+                    max-width: 100%
+                    position: initial
+
             .ony-dyptique-sweat-dos
                 max-width: 220px
                 position: absolute
                 z-index: 99
                 left: 205px
                 top: 0px
+
+                @media all and (max-width: $screen-xs-max)
+                    max-width: 100%
+                    position: initial
         
             .sweat-desc
                 position: absolute
                 top: 465px
                 right: 175px
+
+                @media all and (max-width: $screen-xs-max)
+                    position: initial
 
 #unisex-wrapper
     width: 100%
@@ -190,18 +314,35 @@
     margin: 12rem 0 7rem 0
     padding: 5em 0
 
+    @media all and (max-width: $screen-xs-max)
+        margin: 2rem 0
+        padding: 0
+
     .unisex-left
         width: 50%
         float: left
         text-align: right
 
+        @media all and (max-width: $screen-xs-max)  
+            width: 100%
+            float: none
+            text-align: left
+
         .ony-dyptique-5
             max-width: 430px
+
+            @media all and (max-width: $screen-xs-max)  
+                max-width: 100%
 
     .unisex-right
         width: 50%
         position: relative
         float: right
+
+        @media all and (max-width: $screen-xs-max)  
+            width: 100%
+            position: initial
+            float: none
 
         .yellow-square
             background: $yellow
@@ -217,16 +358,30 @@
             font-weight: 800
             padding: 7em
 
+            @media all and (max-width: $screen-xs-max)  
+                position: initial
+                padding: 2em
+                width: 100%
+
         .ony-dyptique-6
             position: absolute
             width: 290px
             left: 40px
             top: 275px
 
+            @media all and (max-width: $screen-xs-max)  
+                position: initial
+                width: 100%
+
 #contact-wrapper
     height: 630px
     overflow: hidden
     margin-top: 12rem
+
+    @media all and (max-width: $screen-xs-max)  
+        height: auto
+        overflow: auto
+        margin-top: 3rem
 
     .contact-container
         .contact-left
@@ -235,6 +390,11 @@
             text-align: right
             position: relative
 
+            @media all and (max-width: $screen-xs-max)  
+                float: none
+                position: initial
+                width: 100%
+
             .contact-wrapper-button
                 position: absolute
                 color: #fff
@@ -242,6 +402,10 @@
                 font-weight: 700
                 right: 145px
                 bottom: 50px
+                
+                @media all and (max-width: $screen-xs-max)  
+                    position: intial
+                    color: $dark
 
             .diagonal-shape
                 text-align: right
@@ -249,20 +413,34 @@
                 right: -1px
                 top: 293px
 
+                @media all and (max-width: $screen-xs-max)  
+                    display: none
+
         .contact-right
             width: 50%
             float: right
             position: relative
 
+            @media all and (max-width: $screen-xs-max)
+                position: initial
+                float: none
+                width: 100%
+
             .ony-dyptique-4
                 text-align: left
                 max-width: 420px
+
+                @media all and (max-width: $screen-xs-max)
+                    max-width: 100%
 
     .diagonal-text-container
         transform: rotate(-27deg)
         position: absolute
         width: 500px
         text-align: left
+
+        @media all and (max-width: $screen-xs-max)
+            display: none
 
         .keep-me-updated
             position: relative
@@ -304,6 +482,10 @@
     width: 100%
     height: 600px
     margin: 15rem 0
+
+    @media all and (max-width: $screen-xs-max)  
+        margin: 2rem 0
+        height: auto
     
     .social-left
         float: left
@@ -312,6 +494,10 @@
         +flexbox
         +alignitems-center
         +justifycontent-center
+
+        @media all and (max-width: $screen-xs-max)
+            float: none
+            width: 100%
 
         .social-links-container
             +flexbox
@@ -327,6 +513,9 @@
                 color: $dark
                 font-weight: 700
                 font-size: 2.2em
+
+                @media all and (max-width: $screen-xs-max)
+                    font-size: 1.5em
 
             .socialLink
                 -webkit-transition: all .3s ease-in
@@ -345,13 +534,16 @@
         text-align: left
         position: relative
 
+        @media all and (max-width: $screen-xs-max)
+            width: 100%
+            position: initial
+
         .ony-dyptique-2
             max-width: 420px
+
+            @media all and (max-width: $screen-xs-max)
+                max-width: 100%
 
 .hide-on-small-devise
     @media all and (max-width: $screen-xs-max)
         display: none    
-
-.show-mobile-nav-on-home-page
-    @media all and (min-width: $screen-xs-max)
-        display: none
