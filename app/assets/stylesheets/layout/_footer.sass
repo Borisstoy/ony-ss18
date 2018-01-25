@@ -7,7 +7,7 @@
     +justifycontent-spacebetween
     font-weight: 500
 
-    @media all and (max-width: $screen-xs-max)
+    @media all and (max-width: $screen-sm-min)
         +flexdirection-column
         height: auto
         padding: 2em 0
@@ -26,13 +26,13 @@
             &:hover
                 color: $dark
 
-        @media all and (max-width: $screen-xs-max)
+        @media all and (max-width: $screen-sm-min)
             +flexbox
             +flexdirection-column
             margin-right: 0
 
         a, span
-            @media all and (max-width: $screen-xs-max)
+            @media all and (max-width: $screen-sm-min)
                 margin-right: 0
 
     .footer-right
@@ -51,5 +51,5 @@
             &:hover
                 color: lighten($dark, 30%)
 
-            @media all and (max-width: $screen-xs-max)
+            @media all and (max-width: $screen-sm-min)
                 margin: 0

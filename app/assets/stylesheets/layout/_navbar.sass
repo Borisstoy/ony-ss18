@@ -8,7 +8,7 @@
     position: relative
     +justifycontent-spacebetween
 
-    @media all and (max-width: $screen-xs-max)
+    @media all and (max-width: $screen-sm-min)
         display: none
         +flexdirection-column
 
@@ -29,7 +29,7 @@
             &:hover
                 color: lighten($dark, 30%)
 
-        @media all and (max-width: $screen-xs-max)
+        @media all and (max-width: $screen-sm-min)
             +flex-grow(0)
             text-align: left
 
@@ -62,7 +62,7 @@
     height: 60px
     padding: 0 2em
 
-    @media all and (min-width: $screen-xs-max)
+    @media all and (min-width: $screen-sm-min)
         display: none
 
     @media all and (max-width: $screen-sm-min)
@@ -86,7 +86,7 @@
     border-bottom: 1px solid $borders
     background: #fff
 
-    @media all and (min-width: $screen-xs-max)
+    @media all and (min-width: $screen-sm-min)
         display: none
 
     .logo-nav

@@ -1,6 +1,11 @@
 $screen-xxs-min: 560px;
 $screen-xs-max: 767px;
-$screen-sm-min: 768px;
+// IMPORTANT
+// bellow the correct sm-min value,
+// modified here for project sake
+// $screen-sm-min: 768px;
+//
+$screen-sm-min: 830px;
 $screen-md-min: 992px;
 $screen-lg-max: 1024px;
 
