@@ -1,6 +1,11 @@
 #bleu-citron-wrapper
   .collection-slider
-    / - Dir.foreach('app/assets/images/bleucitron') do |image|
-    /   - next if image == '.' or image == '..'
-    /   .collection-visu-container
-    /     = image_tag "bleucitron/#{image}", class: "visu-collection #{image}"
+    
+    // IMPORTANT
+    // This only works before pictures are correectly
+    // named in the right order
+    
+    - order_pic_ids = (1..10).to_a
+    - order_pic_ids.each do |pic_id|
+      = image_tag "bleucitron/ony-bleu-citron-#{pic_id}.jpg", class: 'collection-visu-container'
+    
