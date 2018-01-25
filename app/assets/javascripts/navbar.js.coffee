@@ -51,19 +51,20 @@ $ ->
       banner_top    = banner.offset().top
       header_bottom = header_top + header.height()
       banner_bottom = banner_top + banner.height()
-    
-      if distance < 0
-        header.addClass 'fixed-header'
-
-        $('.logo-on-scroll-nav-container')
-          .animate
-            top: '20px'
-
-      else if header_bottom >= banner_top && 
-                headerOffset < banner_bottom
-        header.removeClass 'fixed-header'  
-        $('.logo-on-scroll-nav-container')
-          .animate 
-            top: '-45px'
-
       
+      if $(window).width() > 767
+        if distance < 0
+          header.addClass 'fixed-header'
+
+          $('.logo-on-scroll-nav-container')
+            .animate
+              top: '20px'
+
+        else if header_bottom >= banner_top && 
+                  headerOffset < banner_bottom
+          header.removeClass 'fixed-header'  
+          $('.logo-on-scroll-nav-container')
+            .animate 
+              top: '-45px'
+
+        

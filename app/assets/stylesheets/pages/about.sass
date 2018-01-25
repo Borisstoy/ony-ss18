@@ -1,3 +1,13 @@
+// helpers
+
+.about-margin-top
+    margin-top: 9rem
+
+    @media all and (max-width: $screen-xs-max)
+        margin-top: 2rem
+
+//
+
 #about-wrapper
     width: 100%
     padding: 4em 0
@@ -90,3 +100,35 @@
     
     .pigmentjaune
         max-width: 300px
+
+
+.creativity-container
+    width: 100%
+    position: relative
+    padding: 5em 0
+
+    @media all and (max-width: $screen-xs-max)
+        +flexbox
+        +flexdirection-column
+        text-align: left
+        padding: 0 1em
+        margin-bottom: 1ren
+
+    .creativity-col-1
+        position: absolute
+        right: 800px
+        width: 350px
+        right: 730px
+
+        @media all and (max-width: $screen-xs-max)
+            position: initial
+
+    .creativity-col-2
+    .creativity-col-3
+        position: absolute
+        right: 120px
+        top: 0
+
+        @media all and (max-width: $screen-xs-max)
+            position: initial
+            text-align: center

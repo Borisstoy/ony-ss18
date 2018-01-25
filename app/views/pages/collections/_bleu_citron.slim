@@ -1,8 +1,6 @@
 #bleu-citron-wrapper
   .collection-slider
-    - Dir.foreach('app/assets/images/bleu_citron') do |image|
-      - next if image == '.' or image == '..'
-      .collection-visu-container
-        = image_tag "bleu_citron/#{image}", class: "visu-collection #{image}"
-
-    
+    / - Dir.foreach('app/assets/images/bleucitron') do |image|
+    /   - next if image == '.' or image == '..'
+    /   .collection-visu-container
+    /     = image_tag "bleucitron/#{image}", class: "visu-collection #{image}"

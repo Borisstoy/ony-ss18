@@ -12,16 +12,17 @@
             .about-the-brand
                 = t('.the_brand').html_safe
 
-    .row{style='margin-top: 9rem'}
-        .col-md-4.col-xs-12
-            .about-red-text
-                = t('.the_creativity').html_safe
-        .col-md-4.col-xs-12
-            .about-red-square
-        .col-md-4.col-xs-12.text-xs-center
-            = image_tag 'pigment-rouge.png', class: 'pigment-rouge'
+    .row.about-margin-top
+        .creativity-container
+            .creativity-col-1
+                .about-red-text
+                    = t('.the_creativity').html_safe
+            .creativity-col-2
+                .about-red-square
+            .creativity-col-3
+                = image_tag 'pigment-rouge.png', class: 'pigment-rouge'
     
-    .row{style='margin-top: 9rem'}
+    .row.about-margin-top
         .col-md-4.col-md-offset-2.col-xs-12.text-xs-center
             = image_tag 'pigment-jaune.png', class: 'pigmentjaune'
         .col-md-4.col-xs-12

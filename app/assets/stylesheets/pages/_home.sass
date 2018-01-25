@@ -347,3 +347,11 @@
 
         .ony-dyptique-2
             max-width: 420px
+
+.hide-on-small-devise
+    @media all and (max-width: $screen-xs-max)
+        display: none    
+
+.show-mobile-nav-on-home-page
+    @media all and (min-width: $screen-xs-max)
+        display: none
