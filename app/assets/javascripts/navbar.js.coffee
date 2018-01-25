@@ -37,7 +37,7 @@ $ ->
 
   is_path = (path) ->
     window.location.pathname == path
-  
+
   $(window).on 'scroll', ->
   
     if is_path('/')
