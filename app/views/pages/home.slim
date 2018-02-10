@@ -38,7 +38,7 @@
       .container-teddy-dos-face
         .teddy-title    
           h2= t('.teddy-title')
-          = link_to t('.discover'), 'http://onyfrance.tictail.com/', target: "blank", class: "discover-btn"
+          = link_to t('.discover'), 'http://onyfrance.tictail.com/', target: "blank", class: "discover-btn animated-underline-btn"
         .teddy-desc
           p= t('.teddy-desc')
         = image_tag 'dyptique/teddy-TERI-rouge-dos.jpg', class: 'ony-dyptique-teddy-dos'
@@ -55,7 +55,7 @@
       .container-sweat-dos-face
         .sweat-title    
           h2= t('.sweat-title')
-          = link_to t('.discover'), 'http://onyfrance.tictail.com/', target: "blank", class: "discover-btn"
+          = link_to t('.discover'), 'http://onyfrance.tictail.com/', target: "blank", class: "discover-btn animated-underline-btn"
         .sweat-desc
           p= t('.sweat-desc')
         = image_tag 'dyptique/sweater-MONDRIAN-rouge-dos.jpg', class: 'ony-dyptique-sweat-dos'
@@ -81,7 +81,7 @@
         = image_tag 'diagonal-shape.svg', class: 'diagonal-shape'
         h3= link_to 'Cöntact', new_contact_path(@new_contact), class: 'contact-wrapper-button mobile-show'
         h3= link_to 'Cöntact', new_contact_path(@new_contact),
-                            class: 'contact-wrapper-button openNewsletterBtn desktop-show',
+                            class: 'contact-wrapper-button openNewsletterBtn desktop-show animated-underline-btn',
                             remote: true
       .contact-right
         = image_tag 'dyptique/ONY_CAMPAGNESS18_4.jpg', class: 'ony-dyptique-4'
@@ -97,7 +97,7 @@
           spam= "pinterest"
 
         = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
-                                          class: 'openNewsletterBtn desktop-show',
+                                          class: 'openNewsletterBtn desktop-show animated-underline-btn',
                                           remote: true
 
         = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
