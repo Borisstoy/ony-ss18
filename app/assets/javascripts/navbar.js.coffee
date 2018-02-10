@@ -40,7 +40,7 @@ $ ->
 
   $(window).on 'scroll', ->
   
-    if is_path('/')
+    if is_path('/') or is_path('/fr') or is_path('/en')
 
       header        = $('#header')
       scrollTop     = $(window).scrollTop()
@@ -58,7 +58,7 @@ $ ->
 
           $('.logo-on-scroll-nav-container')
             .animate
-              top: '20px'
+              top: '13px'
 
         else if header_bottom >= banner_top && 
                   headerOffset < banner_bottom

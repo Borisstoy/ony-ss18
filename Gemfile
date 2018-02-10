@@ -19,6 +19,7 @@ gem 'autoprefixer-rails'
 
 gem 'slim-rails', '~> 3.1', '>= 3.1.1'
 gem 'i18n'
+gem 'meta-tags'
 
 # Blog markdown
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'

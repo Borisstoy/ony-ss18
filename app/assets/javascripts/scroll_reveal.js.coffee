@@ -1,8 +1,8 @@
 fooReveal = {
-  origin: 'top',
+  origin: 'left',
   delay    : 5,
   duration : 500,
-  easing   : 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+  easing   : 'ease',
   scale    : .95,
   mobile   : false
 }

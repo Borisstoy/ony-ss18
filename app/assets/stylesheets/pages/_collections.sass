@@ -1,5 +1,6 @@
 #collections-wrapper
     width: 100%
+    -webkit-overflow-scrolling: touch
 
     #collections-nav
         width: 30%
@@ -12,12 +13,25 @@
         left: 0
         padding-left: .6em
 
-        span.collection-navlinks
+        @media all and (max-width: $screen-sm-min)
+            float: none
+            width: 100%
+            height: auto
+            position: inherit
+            margin-bottom: 1rem
+            padding-left: 0
+
+        h3.collection-navlinks
             color: #fff
-            font-size: 1.6em
+            font-size: 1.4em
             font-weight: 700
             transition: .1s ease-in
             cursor: pointer
+            margin: .4rem 
+
+            @media all and (max-width: $screen-sm-min)
+                font-size: 1.2em
+                color: #000
 
             &:hover
                 color: $dark
@@ -36,6 +50,7 @@
                 font-family: FontAwesome
                 content: '\f105'
                 font-size: 1.5em
+                color: #fff
 
         .collection-slider
             +flexbox

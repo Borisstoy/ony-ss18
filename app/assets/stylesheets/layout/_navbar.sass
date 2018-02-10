@@ -7,6 +7,7 @@
     padding: 1em 0
     position: relative
     +justifycontent-spacebetween
+    background: rgba(255,255,255, .8)
 
     @media all and (max-width: $screen-sm-min)
         display: none
@@ -84,7 +85,7 @@
     z-index: 0
     padding: 0 2em 1em 2em
     border-bottom: 1px solid $borders
-    background: #fff
+    background: transparent
 
     @media all and (min-width: $screen-sm-min)
         display: none
@@ -112,8 +113,8 @@
         +flexdirection-column
 
         @media all and (max-width: $screen-sm-min)
-            dispplay: block
-            margin: 2rem 0 0
+            display: block
+            margin: 2rem 0 1rem 
 
             a
                 @media all and (max-width: $screen-sm-min)
@@ -122,12 +123,16 @@
         img
             max-width: 35px
 
+            @media all and (max-width: $screen-sm-min)
+                max-width: 25px
+
 .locale-switch-wrapper
     position: absolute
     right: 0
     padding-right: .6em
     top: 20px
     color: lighten($dark, 40%)
+    white-space: nowrap
 
     @media all and (max-width: $screen-sm-min)
         left: 15px
@@ -137,6 +142,7 @@
         font-size: .7em
         color: lighten($dark, 40%)
         transition: .1s
+        white-space: nowrap
 
         &:hover
             text-decoration: none
@@ -146,7 +152,7 @@
     position: fixed
     right: 0 
     left: 0
-    z-index: 99
+    z-index: 999
     background: transparent
     margin: 0 auto
     width: 93.5%
@@ -157,6 +163,8 @@
 
 .logo-on-scroll-nav-container
     top: -45px
+    z-index: 9999
+    width: 70px
 
     @media all and (max-width: $screen-sm-min)
             display: none

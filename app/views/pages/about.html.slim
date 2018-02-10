@@ -1,3 +1,7 @@
+- set_meta_tags title: 'ÖNY, marque de streetwear : prêt-à-porter haut de gamme pour homme et femme',
+            description: "Les différentes collaborations artistiques nourrissent l'univers stylistique de la marque de streetwear, ÖNY. Chaque pièce est produite en France en série limitée. Les basiques du vestiaire sportswear sont chaque saison réinterprétés pour offrir du prêt à porter haut de gamme.",
+            keywords: 'marque de streetwear mode'
+
 #about-wrapper
     .row
         .col-md-6.col-xs-12.text-right
@@ -13,14 +17,13 @@
                 = t('.the_brand').html_safe
 
     .row.about-margin-top
-        .creativity-container
-            .creativity-col-1
-                .about-red-text
+        .creativity-relative-container
+            .creativity-container
+                .creativity-col-1
                     = t('.the_creativity').html_safe
-            .creativity-col-2
-                .about-red-square
-            .creativity-col-3
-                = image_tag 'pigment-rouge.png', class: 'pigment-rouge'
+                .creativity-col-2
+                .creativity-col-3
+                    = image_tag 'pigment-rouge.png', class: 'pigment-rouge'
     
     .row.about-margin-top
         .col-md-4.col-md-offset-2.col-xs-12.text-xs-center

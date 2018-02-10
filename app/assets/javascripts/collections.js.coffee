@@ -33,3 +33,4 @@ $ ->
 
     if is_path('/collections')
         $('body').css 'background':'#f1f1f1'
+    

@@ -1,8 +1,10 @@
 doctype html
 html
   head
+    = display_meta_tags og: og_meta
+    = structured_data
+
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
-    title ÖNY
     = csrf_meta_tags
     = action_cable_meta_tag
     meta content="width=device-width, initial-scale=1" name="viewport" /
@@ -16,8 +18,8 @@ html
 
   body
 
-    - if is_dyptique?
-      = image_tag 'trigger-scroll-nav.svg', id: "on-scroll-nav-trigger"
+    / - if is_dyptique?
+    /   = image_tag 'trigger-scroll-nav.svg', id: "on-scroll-nav-trigger"
     = render 'shared/onscroll-nav'
 
     #modalContainer

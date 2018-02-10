@@ -56,78 +56,90 @@
             @media all and (max-width: $screen-sm-min)
                 display: none
 
-    .about-red-text
-        padding: 2em
-        background: #fff
-        position: relative
-        right: -85px
-        z-index: 2
-        
-        @media all and (max-width: $screen-sm-min)
-            padding: 0 1em
-            position: initial   
-
-    .about-red-square
-        width: 300px
-        height: 300px
-        background: $red
+    .about-yellow-container
         padding: 3em
-        color: #fff
-        margin: 0 auto
+        background: $yellow
         position: relative
-        top: -30px
-
-        @media all and (max-width: $screen-sm-min)
-            display: none
-
-    .pigment-rouge
-        max-width: 300px
-        position: relative
-        top: -55px
-        left: -80px
-        z-index: -1
+        left: -60px
+        top: 35px
+        width: 420px
 
         @media all and (max-width: $screen-sm-min)
             position: initial
             width: 100%
-            text-align: center
-            margin: 2rem 0
-
-    .about-yellow-container
-        padding: 3em
-        background: $yellow
     
     .pigmentjaune
         max-width: 300px
+        position: absolute
+        right: 0
 
+        @media all and (max-width: $screen-sm-min)
+            position: initial
 
-.creativity-container
-    width: 100%
+.creativity-relative-container
     position: relative
-    padding: 5em 0
-
-    @media all and (max-width: $screen-sm-min)
-        +flexbox
-        +flexdirection-column
-        text-align: left
-        padding: 0 1em
-        margin-bottom: 1ren
-
-    .creativity-col-1
-        position: absolute
-        right: 800px
-        width: 350px
-        right: 730px
+    width: 100%
+    .creativity-container
+        width: 100%
+        position: relative
+        padding: 5em 0
+        height: 400px
 
         @media all and (max-width: $screen-sm-min)
-            position: initial
+            +flexbox
+            +flexdirection-column
+            text-align: left
+            padding: 0 1em
+            margin-bottom: 1rem
+            height: auto
 
-    .creativity-col-2
-    .creativity-col-3
-        position: absolute
-        right: 120px
-        top: 0
+        .creativity-col-1
+            position: absolute
+            right: 800px
+            width: 350px
+            left: 22%
+            top: 25px
+            z-index: 999
+            padding: 2em
+            background: #fff
+            z-index: 99999
 
-        @media all and (max-width: $screen-sm-min)
-            position: initial
-            text-align: center
+            @media all and (max-width: $screen-sm-min)
+                position: initial
+                width: 100%
+                padding: 0 1em
+
+        .creativity-col-2
+            position: absolute
+            top: -30px
+            z-index: 99
+            width: 300px
+            height: 300px
+            left: 38%
+            background: $red
+            padding: 3em
+            color: #fff
+            margin: 0 auto
+
+            @media all and (max-width: $screen-sm-min)
+                display: none
+
+        .creativity-col-3
+            position: absolute
+            left: 58%
+            top: -85px
+            z-index: 0
+
+            @media all and (max-width: $screen-sm-min)
+                position: initial
+                text-align: center
+        
+            .pigment-rouge
+                max-width: 300px
+                z-index: -1
+
+                @media all and (max-width: $screen-sm-min)
+                    position: initial
+                    width: 100%
+                    text-align: center
+                    margin: 2rem 0
