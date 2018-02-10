@@ -10,7 +10,7 @@ html
     script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"
     script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"
     link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
-
+    
     = stylesheet_link_tag    'application', media: 'all'
     = favicon_link_tag 'favicon-ony.png'
 
@@ -33,10 +33,9 @@ html
 
       - if action_name == 'home'
         .locale-switch-wrapper
-          - if I18n.locale == I18n.default_locale
-            = link_to 'EN', { locale: 'en' }, { class: 'locale-switch' }
-          - else
-            = link_to 'FR', { locale: 'fr' }, { class: 'locale-switch' }
+          = link_to 'EN', { locale: 'en' }, { class: 'locale-switch' }
+          span= ' | '
+          = link_to 'FR', { locale: 'fr' }, { class: 'locale-switch' }
 
       - unless controller_name == 'pages' && action_name == 'home'
         #header

@@ -86,9 +86,7 @@
             top: 5px
 
             @media all and (max-width: $screen-sm-min)
-                position: initial  
-                width: 100%
-                max-height: auto          
+                display: none         
 
         .mondrian-picto
             position: absolute
@@ -104,14 +102,22 @@
                 @media all and (max-width: $screen-sm-min)
                     max-width: 100%
 
+        .mondrian-gif
+            right: 125px
+            bottom: -500px
+            max-width: 350px
+
+            @media all and (max-width: $screen-sm-min)
+                position: initial
+                width: 100%
+                height: auto
+                
         .draw-square
             width: 355px
             height: 355px
             right: 125px
             bottom: -500px
             position: absolute
-            background: #fff
-            border: 6px solid $dark
 
             @media all and (max-width: $screen-sm-min)
                 position: initial
@@ -403,11 +409,11 @@
 
             .contact-wrapper-button
                 position: absolute
-                color: #fff
-                font-size: 2em
+                color: #000
+                font-size: 1.6em
                 font-weight: 700
                 right: 145px
-                bottom: 50px
+                bottom: 70px
                 
                 @media all and (max-width: $screen-sm-min)  
                     position: initial
@@ -453,7 +459,7 @@
             position: relative
             white-space: nowrap
             margin-left: -1000px
-            -webkit-animation: leftToRight 3s infinite
+            -webkit-animation: leftToRight 4s infinite
             font-size: 2em
             font-weight: 700
         
@@ -534,6 +540,13 @@
                 &:hover
                     text-decoration: none
                     letter-spacing: 0.2em
+
+            .openNewsletterBtn
+                transition: .1s!important
+
+                &:hover
+                    color: lighten(#000, 60%)
+                    text-decoration: none
 
     .social-right
         float: right

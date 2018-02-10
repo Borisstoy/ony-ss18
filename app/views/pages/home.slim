@@ -24,15 +24,17 @@
       .mondrian-picto
         = image_tag 'dyptique/mondrian-lego.jpg', class: 'modrian-lego'
       .draw-square
-        p.drawYourIdentity= "draw your identity"
-        p.drawYourIdentity= "draw your identity"
-        p.drawYourIdentity= "draw your identity"
+        = image_tag '0NY_DRAWYOURIDENTITY_GIF.gif', class: 'mondrian-gif'
+        / p.drawYourIdentity= "draw your identity"
+        / p.drawYourIdentity= "draw your identity"
+        / p.drawYourIdentity= "draw your identity"
 
   #the-teddy-wrapper
     .the-teddy-left
       .container-teddy-dos-face
         .teddy-title    
           h2= t('.teddy-title')
+          = link_to t('.discover'), 'http://onyfrance.tictail.com/', target: "blank", class: "discover-btn"
         .teddy-desc
           p= t('.teddy-desc')
         = image_tag 'dyptique/teddy-TERI-rouge-dos.jpg', class: 'ony-dyptique-teddy-dos'
@@ -49,6 +51,7 @@
       .container-sweat-dos-face
         .sweat-title    
           h2= t('.sweat-title')
+          = link_to t('.discover'), 'http://onyfrance.tictail.com/', target: "blank", class: "discover-btn"
         .sweat-desc
           p= t('.sweat-desc')
         = image_tag 'dyptique/sweater-MONDRIAN-rouge-dos.jpg', class: 'ony-dyptique-sweat-dos'
@@ -72,8 +75,8 @@
         .diagonal-text-container.diagonal-text-yellow
           span.keep-me-updated.kmu-animation-delay-yellow="keep me updated"
         = image_tag 'diagonal-shape.svg', class: 'diagonal-shape'
-        = link_to 'Cöntact', new_contact_path(@new_contact), class: 'contact-wrapper-button mobile-show'
-        = link_to 'Cöntact', new_contact_path(@new_contact),
+        h3= link_to 'Cöntact', new_contact_path(@new_contact), class: 'contact-wrapper-button mobile-show'
+        h3= link_to 'Cöntact', new_contact_path(@new_contact),
                             class: 'contact-wrapper-button openNewsletterBtn desktop-show',
                             remote: true
       .contact-right

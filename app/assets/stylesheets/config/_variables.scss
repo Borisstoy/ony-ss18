@@ -2,6 +2,8 @@
  * Fonts
  * ------------------------------------- */
 
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One:400,700|Oswald:400,700,900');
+
 @font-face {
   font-family: 'Gotham';
   src: font-url('Gotham-Bold.otf') format("opentype");
@@ -23,8 +25,8 @@
   font-style: normal;
 }
 
-$base-font: "Gotham", "Helvetica", "sans-serif";
-$header-font: "Gotham", "Helvetica", "sans-serif";
+$base-font: "Lato", "Helvetica", "sans-serif";
+$header-font: 'Oswald', sans-serif;
 
 // Local fonts (uncomment following lines)
 // @font-face {

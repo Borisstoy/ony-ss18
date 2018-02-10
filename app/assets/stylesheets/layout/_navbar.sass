@@ -14,7 +14,7 @@
 
     a
         color: $dark
-        font-size: .8em
+        font-size: .75em
         text-decoration: none
 
     .left-nav
@@ -47,7 +47,7 @@
         z-index: 9999999
 
         img
-            width: 25px
+            width: 21px
 
             &:hover
                 color: lighten($dark, 20%)
@@ -127,14 +127,20 @@
     right: 0
     padding-right: .6em
     top: 20px
+    color: lighten($dark, 40%)
 
     @media all and (max-width: $screen-sm-min)
         left: 15px
         width: 50px
 
     .locale-switch
-        color: lighten($dark, 40%)
         font-size: .7em
+        color: lighten($dark, 40%)
+        transition: .1s
+
+        &:hover
+            text-decoration: none
+            color: #000
 
 .fixed-header, .logo-on-scroll-nav-container
     position: fixed
