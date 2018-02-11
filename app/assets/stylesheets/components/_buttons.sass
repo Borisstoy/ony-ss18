@@ -7,6 +7,9 @@
     display: inline-block
     text-decoration: none
 
+    @media all and (max-width: $screen-sm-min)
+        display: none
+
     &:hover
         text-decoration: none
         color: #000000
@@ -18,7 +21,7 @@
         height: 2px
         background: #000
         transition: width .3s
-        
+
 .animated-underline-btn:hover::after
     color: #000
     text-decoration: none
