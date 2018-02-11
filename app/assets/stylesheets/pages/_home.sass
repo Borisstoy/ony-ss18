@@ -69,11 +69,10 @@
 
     .mondrian-squares-container
         position: relative
-        right: 110px
 
-        @media all and (max-width: 1230px)
-            right: 0
-            
+        @media all and (min-width: $screen-sm-min) and (max-width: 1010px)
+            right: -100px
+
         @media all and (max-width: $screen-sm-min)
             position: initial
 
