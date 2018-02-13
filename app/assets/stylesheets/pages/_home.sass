@@ -49,9 +49,13 @@
             left: -35px
             h2
                 font-weight: 800
+                font-size: 4.2em
+
+                @media all and (max-width: $screen-sm-min)
+                    font-size: 2.5em
             p.typewriter-dyptique
                 margin-bottom: 0
-                
+
             @media all and (max-width: $screen-sm-min)
                 position: initial
                 width: 100%
@@ -439,6 +443,7 @@
                 position: relative
                 right: -1px
                 top: 293px
+                z-index: -99
 
                 @media all and (max-width: $screen-sm-min)  
                     display: none
@@ -447,11 +452,13 @@
             width: 50%
             float: right
             position: relative
+            border-right: 200px solid #fff
 
             @media all and (max-width: $screen-sm-min)
                 position: initial
                 float: none
                 width: 100%
+                border-right: 0
 
             .ony-dyptique-4
                 text-align: left
@@ -465,6 +472,7 @@
         position: absolute
         width: 500px
         text-align: left
+        font-size: 2em
 
         @media all and (max-width: $screen-sm-min)
             display: none
