@@ -18,10 +18,19 @@ en:
     sphere:
     about:
       the_brand:
-        "<h3>La marque</h3>
-        <p>Sous la direction artistique de Audrey Jouanny, ÖNY est un atelier français de prêt-à-porter pour homme et femme.<br>
-        Depuis 2015, ÖNY s'applique à livrer sa définition de la mode :<br>
-        Envisager le vêtement comme un vecteur de singularité.</p>"
+        "<h3>The brand</h3>
+        <p>ÖNY is a french ready-to-wear label for men & women led by Audrey Jouanny. <br>
+
+        Since 2015, ÖNY intents to give its own definition of fashion : <br>
+        Think the garment as a vector of singularity.<br>
+
+        We focus on creativity, quality and durability : <br>
+        The different artistic collaborations feed the stylistic process. <br>
+        Each piece is proudly made in France in limited edition. <br>
+        <br>
+        The basics of the sportswear wardrobe are each season reinterpreted to match with the urban lifestyle. <br><br>
+        The teddy jacket, the starting point of every collection, embodies this era where menswear & womenswear mixed up to result a total unisex closet. <br>
+        </p>"
 
       the_creativity:
         "<p>Créativité, qualité et pérennité en sont les axes de réflexion :</p>
@@ -32,12 +41,12 @@ en:
 
       the_collection:
         "<h3>La collection</h3>
-        <p>Cette nouvelle collection summer 18, est directement inspirée de l’œuvre de Mondrian :<br>
-        Les couleurs primaires se côtoient et s'affrontent.<br>
-        Les lignes se distinguent et se confondent.<br>
-        Colorée, graphique, sportswear, <br>
-        À l'esthète de conjuguer sa propre grammaire stylistique.<br>
-        DYPTIQUE / Draw your identity</p>"
+        <p>This brand new summer 18 collection, is directly inspired by Mondrian's work :<br>
+        The primary colors mix and confront one another. <br>
+        The contours merge and contrast each other. <br>
+        <br>
+        Colorful, graphic, sportswear, <br>
+        The esthete is allowed to conjugate his own stylistic grammar. <br></p>"
     contact:
 
   newsletter:
