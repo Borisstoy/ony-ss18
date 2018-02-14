@@ -202,6 +202,9 @@
                 right: 380px
                 top: 0px
 
+                img
+                    width: 220px
+
                 @media all and (max-width: $screen-sm-min)  
                     position: initial
                     max-width: 100%
@@ -213,6 +216,9 @@
                 right: 175px
                 top: 100px
                 border: 2px solid #fff
+
+                img
+                    width: 220px
 
                 @media all and (max-width: $screen-sm-min)  
                     position: initial
@@ -313,6 +319,9 @@
                 left: 0
                 top: 100px
 
+                img
+                    max-width: 220px
+
                 @media all and (max-width: $screen-sm-min)
                     max-width: 100%
                     position: initial
@@ -324,6 +333,9 @@
                 left: 205px
                 top: 0px
                 border: 2px solid #fff
+
+                img
+                    max-width: 220px
 
                 @media all and (max-width: $screen-sm-min)
                     max-width: 100%
@@ -583,3 +595,22 @@
 .hide-on-small-devise
     @media all and (max-width: $screen-sm-min)
         display: none    
+
+
+.slideshow1,.slideshow2,.slideshow3,.slideshow4
+    position: relative
+    width: 240px
+    height: 240px
+
+    a
+        height: 0
+
+.slideshow1 > a, .slideshow2 > a, .slideshow3 > a, .slideshow4 > a
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+
+.slideshow3
+    height: 339px
