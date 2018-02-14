@@ -4,7 +4,7 @@ class PagesController < ApplicationController
                                                   :bleu_citron,
                                                   :velvet_underground,
                                                   :sphere,
-                                                  :about,
+                                                  :origin,
                                                   :contact,
                                                   :legals,
                                                   :terms_and_conditions ]
@@ -27,7 +27,7 @@ class PagesController < ApplicationController
   def sphere
   end
 
-  def about
+  def origin
   end
 
   def contact

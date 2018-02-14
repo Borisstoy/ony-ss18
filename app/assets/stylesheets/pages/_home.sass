@@ -208,6 +208,7 @@
                 @media all and (max-width: $screen-sm-min)  
                     position: initial
                     max-width: 100%
+                    height: 100%
 
             .ony-dyptique-teddy-dos
                 max-width: 220px
@@ -223,6 +224,7 @@
                 @media all and (max-width: $screen-sm-min)  
                     position: initial
                     max-width: 100%
+                    height: 100%
         
             .teddy-desc
                 position: absolute
@@ -244,7 +246,7 @@
         .container-teddy-yellow
 
             .ony-dyptique-7
-                max-width: 410px
+                max-width: 455px
 
                 @media all and (max-width: $screen-sm-min)  
                     max-width: 100%
@@ -255,8 +257,7 @@
     height: 640px
 
     @media all and (max-width: $screen-sm-min)
-        height: auto
-        overflow: auto
+        overflow: hidden
     
     .the-sweat-left
         width: 50%
@@ -267,7 +268,7 @@
             width: 100%
             float: none
             text-align: left
-            top: 1220px
+            top: 200px
             position: relative
 
         .container-sweat-yellow
@@ -277,7 +278,7 @@
                 padding-right: 0
 
             .ony-dyptique-1
-                max-width: 410px
+                max-width: 455px
 
                 @media all and (max-width: $screen-sm-min)
                     max-width: 100%
@@ -299,6 +300,10 @@
 
             @media all and (max-width: $screen-sm-min)
                 position: initial
+                +flexbox
+                +flexdirection-column
+                +alignitems-center
+                height: 850px
 
             .sweat-title
                 position: absolute
@@ -325,6 +330,7 @@
                 @media all and (max-width: $screen-sm-min)
                     max-width: 100%
                     position: initial
+                    height: 100%
 
             .ony-dyptique-sweat-dos
                 max-width: 220px
@@ -340,6 +346,7 @@
                 @media all and (max-width: $screen-sm-min)
                     max-width: 100%
                     position: initial
+                    height: 100%
         
             .sweat-desc
                 position: absolute
@@ -432,6 +439,13 @@
             text-align: right
             position: relative
 
+            h3 > a
+                text-align: center
+                color: #000!important
+
+                @media all and (max-width: $screen-sm-min)  
+                    margin: 0 2rem 3rem
+
             @media all and (max-width: $screen-sm-min)  
                 float: none
                 position: initial
@@ -444,7 +458,7 @@
                 height: 47px
                 border-radius: 50%
                 right: 145px
-                bottom: -23px
+                bottom: 0
 
                 @media all and (max-width: $screen-sm-min)  
                     position: initial
@@ -602,6 +616,10 @@
     width: 240px
     height: 240px
 
+    @media all and (max-width: $screen-sm-min)
+        height: auto
+        display: none
+
     a
         height: 0
 
@@ -611,6 +629,10 @@
     left: 0
     right: 0
     bottom: 0
+
+@media all and (max-width: $screen-sm-min)
+    .slideshow1 > a > img
+        witdth: 100%
 
 .slideshow3
     height: 339px

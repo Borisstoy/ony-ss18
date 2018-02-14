@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     get 'collections', to: 'pages#collections'
     get 'velvet_underground', to: 'pages#velvet_underground'
     get 'sphere', to: 'pages#sphere'
-    get 'about', to: 'pages#about'
+    get 'origin', to: 'pages#origin'
     get 'legals', to: 'pages#legals'
     get 'contact', to: 'pages#contact'
   end

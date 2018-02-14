@@ -1,6 +1,5 @@
 $ ->
 
-
   console.log('start typewriter')
   typeWriter = (text, n) ->
     if n < text.length

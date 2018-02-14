@@ -1,7 +1,7 @@
 en:
   shop: "Shop"
-  about: "Aböut"
-  contact: "Örigin"
+  about: "Örigin"
+  contact: "Cöntact"
   follow: "Föllow"
   legal: "Legal"
   t_and_c: "Terms & Conditions"
@@ -16,7 +16,7 @@ en:
       unisex-title: "ÖNY gomme la question du genre et engendre un vestiaire 100% unisexe"
     lookbook:
     sphere:
-    about:
+    origin:
       the_brand:
         "<h3>The brand</h3>
         <p>ÖNY is a french ready-to-wear label for men & women led by Audrey Jouanny. <br>

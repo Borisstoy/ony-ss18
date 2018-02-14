@@ -16,7 +16,7 @@ fr:
       unisex-title: "ÖNY gomme la question du genre et engendre un vestiaire 100% unisexe"
     lookbook:
     sphere:
-    about:
+    origin:
       the_brand:
         "<h3>La marque</h3>
         <p>Sous la direction artistique de Audrey Jouanny, ÖNY est un atelier français de prêt-à-porter pour homme et femme.<br>
@@ -45,7 +45,7 @@ fr:
     subscribe: "Join the squad"
     submit: "Envoyer"
     email: "Votre email"
-    get_news: "Insription à la newsletter"
+    get_news: "Inscription à la newsletter"
 
   contact:
     submit: "Envoyer"

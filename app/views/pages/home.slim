@@ -122,7 +122,7 @@
         .diagonal-text-container.diagonal-text-yellow
           span.keep-me-updated.kmu-animation-delay-yellow="keep me updated"
         = image_tag 'diagonal-shape.svg', class: 'diagonal-shape'
-        = link_to '', new_contact_path(@new_contact), class: 'contact-wrapper-button mobile-show'
+        h3= link_to 'Cöntact', new_contact_path(@new_contact), class: 'mobile-show'
         = link_to '', new_contact_path(@new_contact),
                             class: 'contact-wrapper-button openNewsletterBtn desktop-show animated-underline-btn bounce',
                             remote: true
