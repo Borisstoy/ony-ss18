@@ -16,10 +16,12 @@ gem 'uglifier'
 gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
+gem 'bootstrap', '~> 4.0.0'
 
 gem 'slim-rails', '~> 3.1', '>= 3.1.1'
 gem 'i18n'
 gem 'meta-tags'
+gem 'jquery-rails'
 
 # Blog markdown
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'

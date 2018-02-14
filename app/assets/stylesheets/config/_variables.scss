@@ -2,7 +2,7 @@
  * Fonts
  * ------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One:400,700|Oswald:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Biryani:300,400,700|Oswald:400,700,900');
 
 @font-face {
   font-family: 'Gotham';
@@ -25,8 +25,12 @@
   font-style: normal;
 }
 
-$base-font: "Lato", "Helvetica", "sans-serif";
-$header-font: 'Oswald', sans-serif;
+$base-font: "Biryani", "Helvetica", "sans-serif";
+$header-font: 'Biryani', sans-serif;
+
+p {
+  font-weight: 300!important;
+}
 
 // Local fonts (uncomment following lines)
 // @font-face {
@@ -55,3 +59,12 @@ $orange: #E67E22;
 $green: #32B796;
 $gray: #000000;
 
+
+img {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
