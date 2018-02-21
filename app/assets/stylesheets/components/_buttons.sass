@@ -32,6 +32,9 @@ a.discover-btn, .discover-btn
     font-size: .9em
     +flexbox
     transition: 1s
+    
+    @media all and (max-width: $screen-sm-min)
+        display: block
 
     &:hover
         text-decoration: none!important
@@ -43,6 +46,9 @@ a.discover-btn, .discover-btn
         font-weight: 300
         color: #000
         margin-left: 4%
+
+        @media all and (max-width: $screen-sm-min)
+            display: none
 
 .discover-btn:hover::after
     text-decoration: none!important

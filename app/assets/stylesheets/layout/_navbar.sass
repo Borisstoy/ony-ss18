@@ -59,7 +59,8 @@
 
 #mobile-nav-header
     +flexbox
-    +justifycontent-end
+    +justifycontent-spacebetween
+    +alignitems-center
     width: 100%
     height: 60px
     padding: 0 2em
@@ -68,8 +69,15 @@
         display: none
 
     @media all and (max-width: $screen-sm-min)
-        +flexbox
-        padding: 0
+        width: 100%
+        position: fixed
+        right: 0
+        left: 0
+        padding: 0 1.4em
+        z-index: 99999999999
+
+    .mobile-logo-nav-header
+        max-width: 50px
 
     #mobile-nav-trigger
         max-width: 35px
@@ -83,10 +91,12 @@
     +flexdirection-column
     +justifycontent-center
     align-content: center
-    z-index: 0
-    padding: 0 2em 1em 2em
+    z-index: 999999999
+    background: #fff
+    padding: 4em 2em 1em 1.4em
     border-bottom: 1px solid $borders
-    background: transparent
+    position: fixed
+    left: 0
 
     @media all and (min-width: $screen-sm-min)
         display: none

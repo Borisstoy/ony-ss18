@@ -1,9 +1,14 @@
 #mobile-nav-header
+  - unless action_name == "home"
+    = link_to root_path do
+      = image_tag 'ony-logo-dark.svg', class: 'mobile-logo-nav-header'
+  - else
+    span= ""
   = image_tag 'menu.svg', id: 'mobile-nav-trigger'
 
 #navMobile
-  = link_to root_path do
-    = image_tag 'ony-logo-dark.svg', class: 'logo-nav'
+  / = link_to root_path do
+  /   = image_tag 'ony-logo-dark.svg', class: 'logo-nav'
   .nav-mobile-link-wrapper
     = render 'shared/navbar_links'
   .social-links
