@@ -9,6 +9,7 @@
 
   .home-video-banner
     span= "placeholder video"
+    .arrow-home-banner
 #header.hide-on-small-devise
   = render 'shared/navbar'
 
@@ -35,7 +36,7 @@
       .container-teddy-dos-face
         .teddy-title    
           h2= t('.teddy-title')
-          = link_to t('.discover'), 'http://onyfrance.tictail.com/product/teddy-teri-jaune-7856183', target: "blank", class: "discover-btn animated-underline-btn"
+          = link_to t('.discover'), 'http://onyfrance.tictail.com/product/teddy-teri-jaune-7856183', target: "blank", class: "discover-btn"
         .teddy-desc
           p= t('.teddy-desc')
         
@@ -75,7 +76,7 @@
       .container-sweat-dos-face
         .sweat-title    
           h2= t('.sweat-title')
-          = link_to t('.discover'), 'http://onyfrance.tictail.com/product/sweat-mondrian-rouge-7847314', target: "blank", class: "discover-btn animated-underline-btn"
+          = link_to t('.discover'), 'http://onyfrance.tictail.com/product/sweat-mondrian-rouge-7847314', target: "blank", class: "discover-btn"
         .sweat-desc
           p= t('.sweat-desc')
         
@@ -124,7 +125,7 @@
         = image_tag 'diagonal-shape.svg', class: 'diagonal-shape'
         h3= link_to 'Cöntact', new_contact_path(@new_contact), class: 'mobile-show'
         = link_to '', new_contact_path(@new_contact),
-                            class: 'contact-wrapper-button openNewsletterBtn desktop-show animated-underline-btn bounce',
+                            class: 'contact-wrapper-button openNewsletterBtn desktop-show bounce',
                             remote: true
       .contact-right
         = image_tag 'dyptique/ONY_CAMPAGNESS18_4.jpg', class: 'ony-dyptique-4'
@@ -135,9 +136,13 @@
         = link_to 'https://www.facebook.com/ony.france', target: "blank", class: 'socialLink social-fb' do
           span= "facebook"
         = link_to 'https://www.instagram.com/ony_france/', target: "blank", class: 'socialLink social-insta' do
-          spam= "instagram"
+          span= "instagram"
         = link_to 'https://fr.pinterest.com/ony_mood/', target: "blank", class: 'socialLink social-pinterest' do
-          spam= "pinterest"
+          span= "pinterest"
+        = link_to 'https://fr.pinterest.com/ony_mood/', target: "blank", class: 'socialLink social-youtube' do
+          span= "youtube"
+        = link_to 'https://fr.pinterest.com/ony_mood/', target: "blank", class: 'socialLink social-tumblr' do
+          span= "tumblr"
 
         = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
                                           class: 'openNewsletterBtn desktop-show animated-underline-btn',

@@ -30,3 +30,21 @@
 a.discover-btn, .discover-btn
     color: #000
     font-size: .9em
+    +flexbox
+    transition: 1s
+
+    &:hover
+        text-decoration: none!important
+
+    &:after
+        font-family: FontAwesome
+        content: '\f178'
+        font-size: 1.2em
+        font-weight: 300
+        color: #000
+        margin-left: 4%
+
+.discover-btn:hover::after
+    text-decoration: none!important
+    transition: .6s
+    margin-left: 8%
