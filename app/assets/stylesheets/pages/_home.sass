@@ -290,6 +290,7 @@
 
                 @media all and (max-width: $screen-sm-min)
                     max-width: 100%
+                    z-index: 999
 
     .the-sweat-right
         width: 50%
@@ -320,8 +321,11 @@
                 white-space: nowrap
 
                 @media all and (max-width: $screen-sm-min)
-                    position: initial
+                    position: relative
                     text-align: center
+                    top: 85px
+                    left: 0
+                    right: 0
 
                 h2
                     font-weight: 800
@@ -352,9 +356,7 @@
                     max-width: 220px
 
                 @media all and (max-width: $screen-sm-min)
-                    max-width: 100%
-                    position: initial
-                    height: 100%
+                    dispaly: none
         
             .sweat-desc
                 position: absolute
@@ -362,8 +364,11 @@
                 right: 175px
 
                 @media all and (max-width: $screen-sm-min)
-                    position: initial
+                    position: relative
                     text-align: center
+                    top: 90px
+                    left: 0
+                    right: 0
 
 #unisex-wrapper
     width: 100%
@@ -390,6 +395,7 @@
 
             @media all and (max-width: $screen-sm-min)  
                 max-width: 100%
+                display: none
 
     .unisex-right
         width: 50%
