@@ -31,7 +31,7 @@
 
             @media all and (max-width: $screen-sm-min)
                 font-size: 1.2em
-                color: #000
+                color: lighten(#000, 60%)
                 margin-bottom: 1.2rem
 
             &:hover
@@ -55,8 +55,8 @@
 
         .collection-slider
             +flexbox
-            overflow-x: scroll
-            overflow-y: hidden
+            flex-wrap: nowrap
+            overflow-x: auto
             height: calc(100vh - 200px)
 
         .collection-slider::-webkit-scrollbar 
@@ -66,6 +66,7 @@
         .collection-visu-container
             height: calc(100vh - 145px)
             margin-right: .3rem
+            flex: 0 0 auto
 
             .visu-collection
                 margin: auto 

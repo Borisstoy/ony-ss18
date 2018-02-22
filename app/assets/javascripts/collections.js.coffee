@@ -10,8 +10,6 @@ $ ->
     
     collectionNav    = $('#collection-nav-link')
     
-    velvetButton.addClass('collection-active-link')
-
     $('#collections-nav > h3').click ->
         $('h3').removeClass('collection-active-link')
         $(@).addClass('collection-active-link')
