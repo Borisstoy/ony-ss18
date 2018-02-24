@@ -6,7 +6,7 @@ $ ->
 
   mobileNav.removeClass('expanded')
 
-  $('#mobile-nav-trigger').click ->
+  $('#mobile-nav-trigger, #mobile-nav-trigger-close').click ->
 
     if !mobileNav.hasClass('expanded')
       mobileNav.addClass('expanded')
@@ -67,4 +67,10 @@ $ ->
             .animate 
               top: '-45px'
 
-        
+  $('#mobile-nav-trigger').click ->
+    $(@).hide()
+    $('#mobile-nav-trigger-close').show()
+  
+  $('#mobile-nav-trigger-close').click ->
+    $(@).hide()
+    $('#mobile-nav-trigger').show()
