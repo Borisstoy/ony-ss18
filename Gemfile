@@ -23,6 +23,8 @@ gem 'i18n'
 gem 'meta-tags'
 gem 'jquery-rails'
 
+gem 'streamio-ffmpeg'
+
 # Blog markdown
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 

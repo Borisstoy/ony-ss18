@@ -8,8 +8,10 @@
       = image_tag 'ony-logo-dark.svg'
 
   .home-video-banner
-    span= "placeholder video"
     .arrow-home-banner
+    .video-container
+      = video_tag("/videos/ony-ss18-movie.mov", autoplay: :autoplay, loop: :loop)
+    
 #header.hide-on-small-devise
   = render 'shared/navbar'
 
