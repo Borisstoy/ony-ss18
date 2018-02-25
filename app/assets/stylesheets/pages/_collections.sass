@@ -40,16 +40,30 @@
     #collection-slider-container
         width: 100%
         float: right
+        position: relative
 
-        .arrow-collection-nav
+        .right-arrow-collection-nav
             position: absolute
             right: 30px
-            top: 44%
+            top: 50%
             bottom: 50%
 
             &:before
                 font-family: FontAwesome
                 content: '\f105'
+                font-size: 1.5em
+                color: #fff
+        
+        .left-arrow-collection-nav
+            position: absolute
+            left: 30px
+            top: 50%
+            bottom: 50%
+            display: none
+
+            &:before
+                font-family: FontAwesome
+                content: '\f104'
                 font-size: 1.5em
                 color: #fff
 

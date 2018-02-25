@@ -37,4 +37,20 @@ $ ->
 
     if is_path('/collections')
         $('body').css 'background':'#f1f1f1'
+
+    $(".right-arrow-collection-nav").click ->
+        $(".left-arrow-collection-nav").fadeIn()
+        $(".collection-slider").animate({
+          scrollLeft: "+=200px"
+        }, "fast")
     
+     $(".left-arrow-collection-nav").click ->
+        $(".collection-slider").animate({
+            scrollLeft: "-=200px"
+        }, "fast")
+
+    $(".collection-slider").scroll ->
+        if $(@).scrollLeft() > 0 
+            $(".left-arrow-collection-nav").fadeIn()
+        else 
+            $(".left-arrow-collection-nav").fadeOut()
