@@ -22,11 +22,9 @@ gem 'slim-rails', '~> 3.1', '>= 3.1.1'
 gem 'i18n'
 gem 'meta-tags'
 gem 'jquery-rails'
+gem 'newrelic_rpm'
 
 gem 'streamio-ffmpeg'
-
-# Blog markdown
-gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 
 gem 'font-awesome-rails'
 gem 'font-awesome-sass'
