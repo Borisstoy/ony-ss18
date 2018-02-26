@@ -21,7 +21,6 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'slim-rails', '~> 3.1', '>= 3.1.1'
 gem 'i18n'
 gem 'meta-tags'
-gem 'jquery-rails'
 gem 'newrelic_rpm'
 
 gem 'streamio-ffmpeg'
