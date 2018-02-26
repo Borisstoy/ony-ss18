@@ -1,7 +1,6 @@
 h5.contact-intro= t('contact.get_news')
 
-= simple_form_for new_contact, html: { class: 'contact-form' }  do |f|
-
+= simple_form_for new_contact, html: { class: 'contact-form' } do |f|
   = f.input      :name,
                  label: false,
                  placeholder: I18n.t('contact.name'),
@@ -25,6 +24,7 @@ h5.contact-intro= t('contact.get_news')
   = f.input      :newsletter,
                  label: I18n.t('contact.newsletter'),
                  required: true
+
 
   .contact-submit
     = f.button :submit, I18n.t('contact.submit'),

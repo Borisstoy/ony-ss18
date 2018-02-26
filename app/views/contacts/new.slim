@@ -3,4 +3,4 @@
     .col-xs-12.col-md-6.col-md-offset-3
       .newsletter-header
       .newsletter-body
-        = render 'form', new_contact: @new_contact
+        = render 'form', new_contact: @new_contact, :locals => {:locale => params[:locale]}
