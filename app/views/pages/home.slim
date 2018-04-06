@@ -9,7 +9,8 @@
 
   .home-video-banner
     .video-container
-      = video_tag("/videos/ony-ss18-movie.mov", autoplay: :autoplay, loop: :loop)
+      iframe allow=("autoplay; encrypted-media") allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/jqJO3Gyq-t0?autoplay=1" width="100%" 
+      / = video_tag("/videos/ony-ss18-movie.mov", autoplay: :autoplay, loop: :loop)
     
 #header.hide-on-small-devise
   = render 'shared/navbar'
