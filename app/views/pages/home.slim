@@ -1,7 +1,8 @@
 #home-wrapper
     = image_tag 'home-ss18-fall/logo-draft.png', class: 'logo-draft'
-    = image_tag 'home-ss18-fall/girl-window.png', class: 'girl-window'
-    = link_to 'Shop', 'http://onyfrance.tictail.com/', target: "blank", class: 'shop-link'
+    = link_to 'http://onyfrance.tictail.com/', target: "blank" do
+        = image_tag 'home-ss18-fall/girl-window.png', class: 'girl-window'
+    = link_to 'shop', 'http://onyfrance.tictail.com/', target: "blank", class: 'shop-link'
     = image_tag 'home-ss18-fall/girl.png', class: 'girl'
     = image_tag 'home-ss18-fall/waves.png', class: 'waves'
     = link_to 'https://www.facebook.com/ony.france', target: "blank", class: 'social-fb' do
