@@ -26,11 +26,11 @@ html
 
     = render 'shared/flashes'
     
-    .logo-on-scroll-nav-container
-      = link_to root_path do
-          = image_tag 'ony-logo-dark.svg', class: 'logo-on-scroll-nav'
+    / .logo-on-scroll-nav-container
+    /   = link_to root_path do
+    /       = image_tag 'ony-logo-dark.svg', class: 'logo-on-scroll-nav'
 
-    #main-wrapper class="#{ 'full-height' if action_name == 'collections' }"
+    / #main-wrapper class="#{ 'full-height' if action_name == 'collections' }"
 
       / - if action_name == 'home'
       /   .locale-switch-wrapper
@@ -38,14 +38,14 @@ html
       /     span= ' | '
       /     = link_to 'FR', { locale: 'fr' }, { class: 'locale-switch' }
 
-      - unless controller_name == 'pages' && action_name == 'home'
-        #header
-          = render 'shared/navbar'
-      - else
-        = render 'shared/mobile_nav'
+    - unless controller_name == 'pages' && action_name == 'home'
+      #header
+        = render 'shared/navbar'
+    - else
+      = render 'shared/mobile_nav'
 
-      = yield
-      = render 'shared/footer'
+    = yield
+      / = render 'shared/footer'
 
     = javascript_include_tag 'application'
 

@@ -1,694 +1,112 @@
-#home-main-wrapper
-    p
-        @media all and (max-width: $screen-sm-min)
-            font-size: 1.1em
-            margin: 1rem 0
-
-    h2
-        @media all and (max-width: $screen-sm-min)
-            text-align: center
-            margin: 4rem 0 1rem
-
-    img
-        @media all and (max-width: $screen-sm-min)
-            margin-bottom: 1rem
-#dyptique-wrapper
-    margin: 7rem 0
-    overflow: auto
-
-    .dyptique-left-container
-        width: 50%
-        float: left
-        text-align: right
-
-        @media all and (max-width: $screen-sm-min)
-            width: 100%
-            float: none
-
-        .ony-dyptique-3
-            max-width: 400px
-
-            @media all and (max-width: $screen-sm-min)
-                max-width: 100%
-
-    .dyptique-right-container
-        float: right
-        width: 50%
-        position: relative
-
-        @media all and (max-width: $screen-sm-min)
-            float: none
-            width: 100%
-
-        .text-container
-            position: absolute
-            background: #fff
-            padding: 1.5em
-            width: 58%
-            top: 55px
-            left: -35px
-            h2
-                font-weight: 800
-                font-size: 4.2em
-                text-transform: uppercase
-                margin-top: 0
-
-                @media all and (max-width: $screen-sm-min)
-                    font-size: 2.5em
-            p.typewriter-dyptique
-                margin-bottom: 0
-
-            @media all and (max-width: $screen-sm-min)
-                position: initial
-                width: 100%
-
-
-#mondrian-wrapper
-    overflow: hidden
-    height: 600px
-    width: 100%
-    padding: 5em 0
-    margin: 10rem 0 0 0
- 
+#home-wrapper
+    height: 100vh
+    position: relative
     @media all and (max-width: $screen-sm-min)
-        margin: 0
         height: auto
-        padding: 1em 0
-        overflow: auto
-
-    .mondrian-squares-container
-        position: relative
-
-        @media all and (min-width: 1300px)
-            left: -40px
-        
-        @media all and (min-width: 1300px)
-            left: -60px
-
-        @media all and (min-width: $screen-sm-min) and (max-width: 1010px)
-            right: -100px
-
-        @media all and (max-width: $screen-sm-min)
-            position: initial
-
-        .red-square
-            background: $red
-            position: absolute
-            width: 680px
-            height: 390px
-            right: 325px
-            top: 5px
-
-            @media all and (max-width: $screen-sm-min)
-                display: none         
-
-        .mondrian-picto
-            position: absolute
-            right: 545px
-            top: -20px
-
-            @media all and (min-width: 830px) and (max-width: 980px)
-                right: 490px
-
-            @media all and (max-width: $screen-sm-min)
-                position: initial 
-
-            img
-                max-width: 355px
-
-                @media all and (max-width: $screen-sm-min)
-                    max-width: 100%
-
-        .mondrian-gif
-            right: 125px
-            bottom: -500px
-            max-width: 350px
-
-            @media all and (max-width: $screen-sm-min)
-                position: initial
-                width: 100%
-                height: auto
-                
-        .draw-square
-            width: 355px
-            height: 355px
-            right: 125px
-            bottom: -500px
-            position: absolute
-
-            @media all and (max-width: $screen-sm-min)
-                position: initial
-                width: 100%
-                height: auto
-                text-align: center
-
-            p
-                font-size: 2.1em
-                font-weight: 500
-                margin: 0
-                position: absolute
-                left: 0
-                right: 0
-                text-align: center
-                font-weight: 700
-                
-                @media all and (max-width: $screen-sm-min)
-                    position: initial
-
-            p:nth-child(1)
-                top: 0
-                margin-top: 1rem
-
-            p:nth-child(2)
-                top: 40%
-
-            p:nth-child(3)
-                bottom: 0
-                margin-bottom: 1rem
-
-#the-teddy-wrapper
-    width: 100%
-    overflow: hidden
-    margin: 17rem 0
-
-    @media all and (max-width: $screen-sm-min)
-        margin: 1rem 0
-        overflow: auto
-
-    .the-teddy-left
-        width: 50%
-        float: left
-
-        @media all and (max-width: $screen-sm-min)
-            width: 100%
-            float: none
-
-        .container-teddy-dos-face
-            position: relative
-            left: 145px
-            top: 95px
-
-            @media all and (max-width: $screen-sm-min)  
-                position: initial
-
-            .teddy-title
-                position: absolute
-                right: 180px
-                top: -30px
-                white-space: nowrap
-                
-                @media all and (max-width: $screen-sm-min)  
-                    position: initial
-                    text-align: center
-
-                h2
-                    font-weight: 800
-
-            .ony-dyptique-teddy-face
-                max-width: 220px
-                position: absolute
-                right: 380px
-                top: 0px
-
-                img
-                    width: 220px
-
-                @media all and (max-width: $screen-sm-min)  
-                    position: initial
-                    max-width: 100%
-                    height: 100%
-
-            .ony-dyptique-teddy-dos
-                max-width: 220px
-                position: absolute
-                z-index: 99
-                right: 175px
-                top: 100px
-                border: 2px solid #fff
-
-                img
-                    width: 220px
-
-                @media all and (max-width: $screen-sm-min)  
-                    position: initial
-                    max-width: 100%
-                    height: 100%
-        
-            .teddy-desc
-                position: absolute
-                top: 465px
-                right: 175px
-
-                @media all and (max-width: $screen-sm-min)  
-                    position: initial
-                    text-align: center
-
-    .the-teddy-right
-        width: 50%
-        float: right
-
-        @media all and (max-width: $screen-sm-min)  
-            float: none
-            width: 100%
-
-        .container-teddy-yellow
-
-            .ony-dyptique-7
-                max-width: 455px
-
-                @media all and (max-width: $screen-sm-min)  
-                    max-width: 100%
-
-#the-sweat-wrapper
-    width: 100%
-    overflow: hidden
-    height: 640px
-
-    @media all and (max-width: $screen-sm-min)
-        overflow: hidden
-        padding-top: 6em
-    
-    .the-sweat-left
-        width: 50%
-        float: left
-        text-align: right
-
-        @media all and (max-width: $screen-sm-min)
-            width: 100%
-            float: none
-            text-align: left
-            top: 200px
-            position: relative
-
-        .container-sweat-yellow
-            padding-right: 2em
-
-            @media all and (max-width: $screen-sm-min)
-                padding-right: 0
-
-            .ony-dyptique-1
-                max-width: 455px
-
-                @media all and (max-width: $screen-sm-min)
-                    max-width: 100%
-                    z-index: 999
-
-    .the-sweat-right
-        width: 50%
-        float: right
-
-        @media all and (max-width: 360px)
-            width: 100%
-            float: none
-            top: -490px
-            position: relative
-        
-        @media all and (min-width: 361px) and (max-width: 410px)
-            width: 100%
-            float: none
-            top: -510px
-            position: relative
-
-        @media all and (min-width: 411px) and (max-width: 460px)
-            width: 100%
-            float: none
-            top: -570px
-            position: relative
-        
-        @media all and (min-width: 461px) and (max-width: 501px)
-            width: 100%
-            float: none
-            top: -715px
-            position: relative
-
-        @media all and (min-width: 502px) and (max-width: 689px)
-            width: 100%
-            float: none
-            top: -785px
-            position: relative
-
-        @media all and (min-width: 690px) and (max-width: 768px)
-            width: 100%
-            float: none
-            top: -950px
-            position: relative
-        
-        @media all and (min-width: 768px) and (max-width: 830px)
-            width: 100%
-            float: none
-            top: -1080px
-            position: relative
-        
-        .container-sweat-dos-face
-            position: relative
-            left: 0
-            top: 95px
-
-            @media all and (max-width: $screen-sm-min)
-                position: initial
-                +flexbox
-                +flexdirection-column
-                +alignitems-center
-                height: 850px
-
-            .sweat-title
-                position: absolute
-                left: 0
-                top: -30px
-                white-space: nowrap
-
-                @media all and (max-width: $screen-sm-min)
-                    position: relative
-                    text-align: center
-                    top: -35px
-                    left: 0
-                    right: 0
-
-                h2
-                    font-weight: 800
-
-            .ony-dyptique-sweat-profil
-                max-width: 220px
-                position: absolute
-                left: 0
-                top: 100px
-
-                img
-                    max-width: 220px
-
-                @media all and (max-width: $screen-sm-min)
-                    max-width: 100%
-                    position: initial
-                    height: 100%
-
-            .ony-dyptique-sweat-dos
-                max-width: 220px
-                position: absolute
-                z-index: 99
-                left: 205px
-                top: 0px
-                border: 2px solid #fff
-
-                img
-                    max-width: 220px
-
-                @media all and (max-width: $screen-sm-min)
-                    dispaly: none
-        
-            .sweat-desc
-                position: absolute
-                top: 465px
-                right: 175px
-
-                @media all and (max-width: $screen-sm-min)
-                    position: relative
-                    text-align: center
-                    top: -30px
-                    left: 0
-                    right: 0
-
-#unisex-wrapper
-    width: 100%
-    overflow: auto
-    margin: 12rem 0 7rem 0
-    padding: 5em 0
-
-    @media all and (max-width: $screen-sm-min)
-        margin: 2rem 0
-        padding: 0
-
-    .unisex-left
-        width: 50%
-        float: left
-        text-align: right
-
-        @media all and (max-width: $screen-sm-min)  
-            width: 100%
-            float: none
-            text-align: left
-
-        .ony-dyptique-5
-            max-width: 430px
-
-            @media all and (max-width: $screen-sm-min)  
-                max-width: 100%
-                display: none
-
-    .unisex-right
-        width: 50%
-        position: relative
-        float: right
-
-        @media all and (max-width: $screen-sm-min)  
-            width: 100%
-            position: initial
-            float: none
-
-        .yellow-square
-            background: $yellow
-            width: 436px
-            height: 350px
-            top: -35px
-            position: absolute
-            left: -65px
-            z-index: -1
-            +flexbox
-            +alignitems-center
-            +justifycontent-center
-            font-weight: 800
-            padding: 7em 2em 7em 6em
-            font-size: 1.3em
-
-            @media all and (max-width: $screen-sm-min)  
-                position: initial
-                padding: 2em
-                width: 100%
-
-        .ony-dyptique-6
-            position: absolute
-            width: 290px
-            left: 40px
-            top: 275px
-
-            @media all and (max-width: $screen-sm-min)  
-                position: initial
-                width: 100%
-
-#contact-wrapper
-    height: 630px
-    overflow: hidden
-    margin-top: 12rem
-
-    @media all and (max-width: $screen-sm-min)  
-        height: auto
-        overflow: auto
-        margin-top: 3rem
-
-    .contact-container
-        .contact-left
-            float: left
-            width: 50%
-            text-align: right
-            position: relative
-
-            h3 > a
-                text-align: center
-                color: #000!important
-
-                @media all and (max-width: $screen-sm-min)  
-                    margin: 0 2rem 3rem
-
-            @media all and (max-width: $screen-sm-min)  
-                float: none
-                position: initial
-                width: 100%
-
-            .contact-wrapper-button
-                position: absolute
-                background: $blue
-                width: 47px
-                height: 47px
-                border-radius: 50%
-                right: 145px
-                bottom: 0
-                transition: 1.5s
-
-                &:hover
-                    background: $red
-
-                @media all and (max-width: $screen-sm-min)  
-                    position: initial
-                    color: $dark
-                    text-align: center
-
-            .diagonal-shape
-                text-align: right
-                position: relative
-                right: -1px
-                top: 293px
-                z-index: -99
-
-                @media all and (max-width: $screen-sm-min)  
-                    display: none
-
-        .contact-right
-            width: 50%
-            float: right
-            position: relative
-            background: #fff
-
-            @media all and (max-width: $screen-sm-min)
-                position: initial
-                float: none
-                width: 100%
-                border-right: 0
-
-            .ony-dyptique-4
-                text-align: left
-                max-width: 420px
-
-                @media all and (max-width: $screen-sm-min)
-                    max-width: 100%
-
-    .diagonal-text-container
-        transform: rotate(-27deg)
+        position: static
+    .girl-window
+        max-height: 95%
         position: absolute
-        width: 500px
-        text-align: left
-        font-size: 2em
+        top: 50%
+        transform: translateY(-50%)
+        right: 120px
+        z-index: 2
+        @media all and (max-width: $screen-sm-min)
+            right: 12%
+    .girl
+        position: absolute
+        right: 0
+        z-index: 1
+        max-height: 100%
 
+    .logo-draft
+        z-index: 2
+        position: absolute
+        top: 5%
+        left: 5%
         @media all and (max-width: $screen-sm-min)
             display: none
-
-        .keep-me-updated
-            position: relative
-            white-space: nowrap
-            margin-left: -1000px
-            -webkit-animation: leftToRight 5s infinite
-            font-size: 2em
-            font-weight: 700
-        
-        .kmu-animation-delay-red
-            animation-delay: 0
-        .kmu-animation-delay-blue
-            animation-delay: 1s
-        .kmu-animation-delay-yellow
-            animation-delay: .5s
-
-    .diagonal-text-red
-        right: 0
-        top: 370px
-        color: $red
-    
-    .diagonal-text-blue
-        right: 0
-        top: 265px
-        color: $blue
-
-    .diagonal-text-yellow
-        right: 0
-        top: 175px
-        color: $yellow
-
-@-webkit-keyframes leftToRight 
-    0%   
-        margin-right: -200px
-    100% 
-        margin-left: 700px
-
-#news-social-wrapper
-    width: 100%
-    height: 600px
-    margin: 15rem 0
-
-    @media all and (max-width: $screen-sm-min)  
-        margin: 2rem 0
-        height: auto
-    
-    .social-left
-        float: left
-        width: 50%
+    .waves
+        position: absolute
+        z-index: 2
+        bottom: 0
+        height: 55%
+        left: 20%
+        @media all and (max-width: $screen-sm-min)
+            height: 45%
+            left: -15%
+    .top-rectangle
+        background: #999999
+        height: 20%
+        width: 100%
+        position: absolute
+        top: 0
+        z-index: 0
+    .left-rectangle
+        background: lighten(#999999, 38%)
         height: 100%
-        +flexbox
-        +alignitems-center
-        +justifycontent-center
-
+        width: 10%
+        position: absolute
+        left: 0
+        z-index: -1
+    .bottom-rectangle
+        background: #eef3fa
+        height: 7%
+        width: 100%
+        position: absolute
+        bottom: 0
+        z-index: -2
+    .shop-link
+        z-index: 5
+        position: absolute
+        color: $purple
+        font-weight: 700
+        font-size: 74px
+        right: 596px
+        top: 50%
+        transform: rotate(-90deg)
+        transition: color .2s
+        text-decoration: none
         @media all and (max-width: $screen-sm-min)
-            float: none
-            width: 100%
-
-        .social-links-container
-            +flexbox
-            +flexdirection-column
-            text-align: center
-
-            .social-tumblr
-                padding-bottom: 1em
-                border-bottom: 5px solid $dark
-                margin-bottom: 3rem
-
-            a
-                color: $dark
-                font-weight: 700
-                font-size: 2.2em
-
-                @media all and (max-width: $screen-sm-min)
-                    font-size: 1.5em
-
-            .socialLink
-                -webkit-transition: all .3s ease-in
-                -moz-transition: all .3s ease-in
-                -ms-transition: all .3s ease-in
-                -o-transition: all .3s ease-in
-                transition: all .3s ease-in
-
-                &:hover
-                    text-decoration: none
-                    letter-spacing: 0.2em
-
-    .social-right
-        float: right
-        width: 50%
-        text-align: left
-        position: relative
-
+            right: 2%
+        &:hover
+            color: darken($purple, 20%)
+            text-decoration: none
+    .title
+        display: flex
+        align-items: center
+        flex-direction: column
+        position: absolute
+        z-index: 10
+        font-size: 28px
+        color: $purple
+        right: 606px
         @media all and (max-width: $screen-sm-min)
-            width: 100%
-            position: initial
-
-        .ony-dyptique-2
-            max-width: 420px
-
-            @media all and (max-width: $screen-sm-min)
-                max-width: 100%
-
-.hide-on-small-devise
-    @media all and (max-width: $screen-sm-min)
-        display: none    
-
-
-.slideshow1,.slideshow2,.slideshow3,.slideshow4
-    position: relative
-    width: 240px
-    height: 240px
-
-    @media all and (max-width: $screen-sm-min)
-        height: auto
-        display: none
-
-    a
-        height: 0
-
-.slideshow1 > a, .slideshow2 > a, .slideshow3 > a, .slideshow4 > a
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-
-@media all and (max-width: $screen-sm-min)
-    .slideshow1 > a > img
-        witdth: 100%
-
-.slideshow3
-    height: 339px
+            flex-direction: row
+            right: 2%
+            bottom: 18%
+    .season
+        position: absolute
+        bottom: 10%
+        right: 2%
+        color: #000
+        font-size: 48px
+        z-index: 10
+    .social-fb
+        position: absolute
+        z-index: 10
+        top: 65%
+        left: 10%
+        @media all and (max-width: $screen-sm-min)
+            display: none
+        img
+            width: 70px
+    .social-insta
+        position: absolute
+        z-index: 10
+        top: 50%
+        left: 5%
+        @media all and (max-width: $screen-sm-min)
+            display: none
+        img
+            width: 100px

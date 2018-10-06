@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.4.0'
+ruby '2.5.1'
 
 gem 'rails', '5.1.0'
 gem 'puma'
-gem 'pg'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'devise'
@@ -32,6 +31,10 @@ gem 'browserify-rails'
 
 gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
+group :production do
+  gem 'pg', '~> 0.18'
+end
 
 group :development, :test do
   gem 'binding_of_caller'

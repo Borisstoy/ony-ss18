@@ -38,34 +38,34 @@ $ ->
   is_path = (path) ->
     window.location.pathname == path
 
-  $(window).on 'scroll', ->
+  # $(window).on 'scroll', ->
   
-    if is_path('/') or is_path('/fr') or is_path('/en')
+  #   if is_path('/') or is_path('/fr') or is_path('/en')
 
-      header        = $('#header')
-      scrollTop     = $(window).scrollTop()
-      headerOffset  = header.offset().top
-      distance      = (headerOffset - scrollTop)
-      banner        = $(".home-video-banner")
-      header_top    = header.offset().top
-      banner_top    = banner.offset().top
-      header_bottom = header_top + header.height()
-      banner_bottom = banner_top + banner.height()
+  #     header        = $('#header')
+  #     scrollTop     = $(window).scrollTop()
+  #     headerOffset  = header.offset().top
+  #     distance      = (headerOffset - scrollTop)
+  #     banner        = $(".home-video-banner")
+  #     header_top    = header.offset().top
+  #     banner_top    = banner.offset().top
+  #     header_bottom = header_top + header.height()
+  #     banner_bottom = banner_top + banner.height()
       
-      if $(window).width() > 767
-        if distance < 0
-          header.addClass 'fixed-header'
+  #     if $(window).width() > 767
+  #       if distance < 0
+  #         header.addClass 'fixed-header'
 
-          $('.logo-on-scroll-nav-container')
-            .animate
-              top: '13px'
+  #         $('.logo-on-scroll-nav-container')
+  #           .animate
+  #             top: '13px'
 
-        else if header_bottom >= banner_top && 
-                  headerOffset < banner_bottom
-          header.removeClass 'fixed-header'  
-          $('.logo-on-scroll-nav-container')
-            .animate 
-              top: '-45px'
+  #       else if header_bottom >= banner_top && 
+  #                 headerOffset < banner_bottom
+  #         header.removeClass 'fixed-header'  
+  #         $('.logo-on-scroll-nav-container')
+  #           .animate 
+  #             top: '-45px'
 
   $('#mobile-nav-trigger').click ->
     $(@).hide()
