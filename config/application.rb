@@ -28,6 +28,7 @@ module OnySs18
     config.assets.paths << Rails.root.join("app", "assets", "images")
     config.assets.paths << Rails.root.join("app", "assets", "stylesheets")
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    config.assets.initialize_on_precompile = false
 
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
