@@ -58,3 +58,14 @@ html
 
     @media all and (max-width: $screen-sm-min)
         position: inherit
+
+.animated-underline-btn, .about-title
+    display: flex
+    &:before
+        content: '['
+        color: $red
+        margin-right: 8px
+    &:after
+        content: ']'
+        color: $blue
+        margin-left: 8px

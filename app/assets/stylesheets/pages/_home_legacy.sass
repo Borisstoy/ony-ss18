@@ -77,6 +77,7 @@
         overflow: auto
 
     .mondrian-squares-container
+        display: flex
         position: relative
 
         @media all and (min-width: 1300px)
@@ -90,81 +91,58 @@
 
         @media all and (max-width: $screen-sm-min)
             position: initial
+            display: flex         
+            flex-direction: column
 
-        .red-square
-            background: $red
-            position: absolute
-            width: 680px
-            height: 390px
-            right: 325px
-            top: 5px
-
+        .mondrian-left
+            width: 50%
+            position: relative
             @media all and (max-width: $screen-sm-min)
-                display: none         
-
-        .mondrian-picto
-            position: absolute
-            right: 545px
-            top: -20px
-
-            @media all and (min-width: 830px) and (max-width: 980px)
-                right: 490px
-
-            @media all and (max-width: $screen-sm-min)
-                position: initial 
-
-            img
-                max-width: 355px
-
-                @media all and (max-width: $screen-sm-min)
-                    max-width: 100%
-
-        .mondrian-gif
-            right: 125px
-            bottom: -500px
-            max-width: 350px
-
-            @media all and (max-width: $screen-sm-min)
-                position: initial
+                position: static
                 width: 100%
-                height: auto
-                
-        .draw-square
-            width: 355px
-            height: 355px
-            right: 125px
-            bottom: -500px
-            position: absolute
-
-            @media all and (max-width: $screen-sm-min)
-                position: initial
-                width: 100%
-                height: auto
-                text-align: center
-
-            p
-                font-size: 2.1em
-                font-weight: 500
-                margin: 0
+                display: flex
+                flex-direction: column
+                align-items: center
+            .section-2-1
                 position: absolute
-                left: 0
-                right: 0
-                text-align: center
-                font-weight: 700
-                
+                z-index: 3
+                max-width: 220px
+                right: 0 
                 @media all and (max-width: $screen-sm-min)
+                    max-width: auto
                     position: initial
-
-            p:nth-child(1)
-                top: 0
-                margin-top: 1rem
-
-            p:nth-child(2)
-                top: 40%
-
-            p:nth-child(3)
-                bottom: 0
-                margin-bottom: 1rem
+            .section-2-2
+                position: absolute
+                z-index: 1
+                max-width: 350px
+                right: 60px
+                top: 170px
+                @media all and (max-width: $screen-sm-min)
+                    max-width: auto
+                    position: initial
+            .section-2-3
+                position: absolute
+                z-index: 3
+                max-width: 150px
+                right: -22px
+                top: 312px
+                @media all and (max-width: $screen-sm-min)
+                    max-width: auto
+                    position: initial
+        .mondrian-right
+            width: 50%
+            position: relative
+            @media all and (max-width: $screen-sm-min)
+                position: static
+                width: 100%
+                text-align: center
+            .gif-dare
+                position: relative
+                max-width: 300px
+                left: 35px
+                top: 18px
+                @media all and (max-width: $screen-sm-min)
+                    position: static
 
 #the-teddy-wrapper
     width: 100%
@@ -203,6 +181,7 @@
 
                 h2
                     font-weight: 800
+                    color: $blue
 
             .ony-dyptique-teddy-face
                 max-width: 220px
@@ -221,10 +200,9 @@
             .ony-dyptique-teddy-dos
                 max-width: 220px
                 position: absolute
-                z-index: 99
-                right: 175px
+                z-index: 10
+                right: 218px
                 top: 100px
-                border: 2px solid #fff
 
                 img
                     width: 220px
@@ -236,12 +214,20 @@
         
             .teddy-desc
                 position: absolute
-                top: 465px
-                right: 175px
+                z-index: 10
+                color: #fff
+                top: 0
+                right: 0
+                left: 0
+                padding: 1em
+
+                p
+                    font-size: 26px
 
                 @media all and (max-width: $screen-sm-min)  
                     position: initial
                     text-align: center
+                    color: $dark
 
     .the-teddy-right
         width: 50%
@@ -250,6 +236,7 @@
         @media all and (max-width: $screen-sm-min)  
             float: none
             width: 100%
+            text-align: center
 
         .container-teddy-yellow
 
@@ -366,6 +353,7 @@
 
                 h2
                     font-weight: 800
+                    color: $blue
 
             .ony-dyptique-sweat-profil
                 max-width: 220px
@@ -384,10 +372,9 @@
             .ony-dyptique-sweat-dos
                 max-width: 220px
                 position: absolute
-                z-index: 99
+                z-index: 10
                 left: 205px
-                top: 0px
-                border: 2px solid #fff
+                top: 40px
 
                 img
                     max-width: 220px
@@ -397,8 +384,15 @@
         
             .sweat-desc
                 position: absolute
-                top: 465px
-                right: 175px
+                z-index: 10
+                color: #fff
+                top: 0
+                right: 0
+                left: 0
+                padding: 1em
+
+                p
+                    font-size: 26px
 
                 @media all and (max-width: $screen-sm-min)
                     position: relative
@@ -588,7 +582,7 @@
     .diagonal-text-yellow
         right: 0
         top: 175px
-        color: $yellow
+        color: lighten($red, 30%)
 
 @-webkit-keyframes leftToRight 
     0%   
@@ -667,28 +661,46 @@
         display: none    
 
 
-.slideshow1,.slideshow2,.slideshow3,.slideshow4
-    position: relative
-    width: 240px
-    height: 240px
+// .slideshow1,.slideshow2,.slideshow3,.slideshow4
+//     position: relative
+//     width: 240px
+//     height: 240px
 
+//     @media all and (max-width: $screen-sm-min)
+//         height: auto
+//         display: none
+
+//     a
+//         height: 0
+
+// .slideshow1 > a, .slideshow2 > a, .slideshow3 > a, .slideshow4 > a
+//     position: absolute
+//     top: 0
+//     left: 0
+//     right: 0
+//     bottom: 0
+
+// @media all and (max-width: $screen-sm-min)
+//     .slideshow1 > a > img
+//         witdth: 100%
+
+// .slideshow3
+//     height: 339px
+
+.slideshow1, .slideshow2
     @media all and (max-width: $screen-sm-min)
-        height: auto
         display: none
 
-    a
-        height: 0
-
-.slideshow1 > a, .slideshow2 > a, .slideshow3 > a, .slideshow4 > a
+.t-shirt-1
+    width: 350px !important
+    z-index: 10
+    top: 200px
     position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
+    right: 290px
 
-@media all and (max-width: $screen-sm-min)
-    .slideshow1 > a > img
-        witdth: 100%
-
-.slideshow3
-    height: 339px
+.t-shirt-2
+    z-index: 10
+    top: 218px
+    position: absolute
+    left: 218px
+    max-width: 230px

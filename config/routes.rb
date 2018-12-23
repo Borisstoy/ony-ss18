@@ -8,10 +8,10 @@ Rails.application.routes.draw do
     resources :newsletters
     resources :contacts
     get 'home', to: 'pages#home'
-    # get 'collections', to: 'pages#collections'
-    # get 'velvet_underground', to: 'pages#velvet_underground'
-    # get 'sphere', to: 'pages#sphere'
-    # get 'origin', to: 'pages#origin'
+    get 'collections', to: 'pages#collections'
+    get 'velvet_underground', to: 'pages#velvet_underground'
+    get 'sphere', to: 'pages#sphere'
+    get 'origin', to: 'pages#origin'
     get 'legals', to: 'pages#legals'
     get 'contact', to: 'pages#contact'
   end

@@ -8,17 +8,17 @@ en:
   pages:
     home:
       discover: "Discover"
-      one: "[noun metaphorical : a work composed of two opposite yet complementary parts.]"
-      teddy-title: "the teddy"
+      one: "[ noun: the state of being strikingly different from something else in juxtaposition or close association. ]"
+      teddy-title: "TEDDY TED"
       teddy-desc: "ÖNY's all time centerpiece"
-      sweat-title: "the sweat"
+      sweat-title: "T-SHIRT TONY"
       sweat-desc: "With its oversized proportions, it comes in two versions: red or yellow velvet"
       unisex-title: "ÖNY erases the matter of genre, the oversized proportions respond to the athleisure trend and gives birth to a 100% unisex wardrobe."
     lookbook:
     sphere:
     origin:
       the_brand:
-        "<h3>The brand</h3>
+        "<h3 class= 'about-title'>The brand</h3>
         <p>ÖNY is a french ready-to-wear label for men & women led by Audrey Jouanny. <br>
 
         Since 2015, ÖNY intents to give its own definition of fashion : <br>
@@ -34,7 +34,7 @@ en:
         The teddy jacket, the starting point of every collection, embodies this era where menswear & womenswear mixed up to result a total unisex closet. <br></p>"
 
       the_collection:
-        "<h3>The collection</h3>
+        "<h3 class= 'about-title'>The collection</h3>
         <p>This brand new summer 18 collection, is directly inspired by Mondrian's work :<br>
         The primary colors mix and confront one another. <br>
         The contours merge and contrast each other. <br>

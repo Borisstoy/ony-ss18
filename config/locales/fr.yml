@@ -8,17 +8,17 @@ fr:
   pages:
     home:
       discover: "Découvrir"
-      one: "[n.m métaphorique: une oeuvre en deux parties qui s'opposent et se complètent.]"
-      teddy-title: "le teddy"
+      one: "[ n.m contraste: opposition de deux choses dont l'une fait ressortir l'autre ]"
+      teddy-title: "TEDDY TED"
       teddy-desc: "La pièce maîtresse de chaque collection"
-      sweat-title: "le sweat"
-      sweat-desc: "Travaillé dans des proportions oversized, il se décline en deux versions: velours rouge ou jaune"
+      sweat-title: "T-SHIRT TONY"
+      sweat-desc: "Véritable ode à l'assurance, caractère et allure certaine"
       unisex-title: "ÖNY gomme la question du genre et engendre un vestiaire 100% unisexe"
     lookbook:
     sphere:
     origin:
       the_brand:
-        "<h3>La marque</h3>
+        "<h3 class= 'about-title'>La marque</h3>
         <p>Sous la direction artistique de Audrey Jouanny, ÖNY est un atelier français de prêt-à-porter pour homme et femme.<br>
         Depuis 2015, ÖNY s'applique à livrer sa définition de la mode :<br>
         Envisager le vêtement comme un vecteur de singularité.</p>"
@@ -31,7 +31,7 @@ fr:
         Le teddy, point de départ de chaque collection, incarne cette ère où menswear et womenswear se confondent pour aboutir à une garde robe unisexe.</p>"
 
       the_collection:
-        "<h3>La collection</h3>
+        "<h3 class= 'about-title'>La collection</h3>
         <p>Cette nouvelle collection summer 18, est directement inspirée de l’œuvre de Mondrian :<br>
         Les couleurs primaires se côtoient et s'affrontent.<br>
         Les lignes se distinguent et se confondent.<br>

@@ -22,7 +22,7 @@
         background: #000
         transition: width .3s
 
-.animated-underline-btn:hover::after
+.animated-underline-btn
     color: #000
     text-decoration: none
     width: 100%
@@ -55,3 +55,14 @@ a.discover-btn, .discover-btn
     text-decoration: none!important
     transition: .6s
     margin-left: 8%
+
+.animated-underline-btn
+    display: flex
+    &:before
+        content: '['
+        color: $red
+        margin-right: 8px
+    &:after
+        content: ']'
+        color: $blue
+        margin-left: 8px

@@ -24,10 +24,15 @@
 
         @media all and (max-width: $screen-sm-min)
             padding: 0 1em
+            height: 298px
     
     .about-blue-container
         position: relative
         height: 550px
+
+        @media all and (max-width: $screen-sm-min)
+            height: auto
+
 
         .ony-founder
             position: absolute
@@ -45,8 +50,7 @@
             z-index: -1
 
             @media all and (max-width: $screen-sm-min)
-                position: initial
-                margin: 2rem 0
+                display: none
         
         .about-blue-square
             position: absolute
@@ -62,7 +66,7 @@
 
     .about-yellow-container
         padding: 3em
-        background: $yellow
+        background: lighten($red, 30%)
         position: relative
         left: -60px
         top: 35px
@@ -78,8 +82,7 @@
         right: 0
 
         @media all and (max-width: $screen-sm-min)
-            position: initial
-            max-width: 100%
+            display: none
             
     .black-div
         position: absolute
@@ -101,6 +104,7 @@
         position: relative
         padding: 5em 0
         height: 400px
+        top: -150px
 
         @media all and (max-width: $screen-sm-min)
             +flexbox
@@ -114,7 +118,7 @@
             position: absolute
             right: 800px
             width: 395px
-            left: 22%
+            left: 32%
             top: 25px
             z-index: 999
             padding: 2em
@@ -132,7 +136,7 @@
             z-index: 99
             width: 300px
             height: 300px
-            left: 38%
+            left: 50%
             background: $red
             padding: 3em
             color: #fff
@@ -160,3 +164,7 @@
                     width: 100%
                     text-align: center
                     margin: 2rem 0
+
+.about-last
+    top: -195px
+    position: relative

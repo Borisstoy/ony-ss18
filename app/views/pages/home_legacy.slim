@@ -1,158 +1,29 @@
-- set_meta_tags title: 'ÖNY, marque de vêtements française de streetwear haut de gamme unisexe',
-          description: 'ÖNY, est une marque de vêtements française de streetwear haut de gamme pour homme et femme. Elle floute les limites du genre avec des pièces mixtes telles que le Teddy et le Sweat. Rendez-vous sur notre E-shop. Livraison gratuite en France.',
-          keywords: 'marque de vêtements française style streetwear'
-
-#home-banner
-  .logo-nav
-    = link_to root_path do
-      = image_tag 'ony-logo-dark.svg'
-
-  .home-video-banner
-    .video-container
-      iframe allow=("autoplay; encrypted-media") allowfullscreen="" frameborder="0" height="100%" src="https://www.youtube.com/embed/jqJO3Gyq-t0?autoplay=1&loop=1" width="100%" 
-      / = video_tag("/videos/ony-ss18-movie.mov", autoplay: :autoplay, loop: :loop)
-    
-#header.hide-on-small-devise
-  = render 'shared/navbar'
-
-#home-main-wrapper
-  #dyptique-wrapper
-    .dyptique-left-container
-      = image_tag 'dyptique/ONY_CAMPAGNESS18_3.jpg', class: 'ony-dyptique-3'
-    .dyptique-right-container
-      .text-container
-        h2= "Dyptique"
-        h2= "SS.18"
-        p.typewriter-dyptique data-text= t('.one')
-
-  #mondrian-wrapper
-    .mondrian-squares-container
-      .red-square
-      .mondrian-picto
-        = image_tag 'dyptique/mondrian-lego.jpg', class: 'modrian-lego'
-      .draw-square
-        = link_to origin_path do
-          = image_tag '0NY_DRAWYOURIDENTITY_GIF.gif', class: 'mondrian-gif'
-
-  #the-teddy-wrapper
-    .the-teddy-left
-      .container-teddy-dos-face
-        .teddy-title    
-          h2= t('.teddy-title')
-          = link_to t('.discover'), 'http://onyfrance.tictail.com/product/teddy-teri-jaune-7856183', target: "blank", class: "discover-btn"
-        .teddy-desc
-          p= t('.teddy-desc')
-        
-        / right slider
-        .ony-dyptique-teddy-dos
-          .slideshow1
-            = link_to 'http://onyfrance.tictail.com/product/teddy-teri-rouge-7856221', target: 'blank' do
-                = image_tag 'dyptique/teddy-TERI-red-dos.jpg', class: 'teddy-dos-3'
-            = link_to 'http://onyfrance.tictail.com/product/teddy-teri-rouge-7856221', target: 'blank' do
-                = image_tag 'dyptique/teddy-TERI-red-profil.jpg', class: 'teddy-dos-2'
-            = link_to 'http://onyfrance.tictail.com/product/teddy-teri-rouge-7856221', target: 'blank' do
-                = image_tag 'dyptique/teddy-TERI-red-face.jpg', class: 'teddy-dos-1'
-
-        / left slider
-        .ony-dyptique-teddy-face
-          .slideshow2
-            = link_to 'http://onyfrance.tictail.com/product/teddy-teri-jaune-7856183', target: 'blank' do
-              = image_tag 'dyptique/teddy-TERI-yellow-face.jpg', class: 'teddy-face-3'
-            
-            = link_to 'http://onyfrance.tictail.com/product/teddy-teri-jaune-7856183', target: 'blank' do
-              = image_tag 'dyptique/teddy-TERI-yellow-dos.jpg', class: 'teddy-face-2'
-            
-            = link_to 'http://onyfrance.tictail.com/product/teddy-teri-jaune-7856183', target: 'blank' do
-              = image_tag 'dyptique/teddy-TERI-yellow-profil.jpg', class: 'teddy-face-1'
-
-    .the-teddy-right
-      .container-teddy-yellow
-        = link_to 'http://onyfrance.tictail.com/product/teddy-teri-rouge', target: 'blank' do
-          = image_tag 'dyptique/ONY_CAMPAGNESS18_7.jpg', class: 'ony-dyptique-7'
-
-  #the-sweat-wrapper
-    = link_to 'http://onyfrance.tictail.com/product/sweat-mondrian-jaune', target: 'blank' do
-      .the-sweat-left
-        .container-sweat-yellow
-          = image_tag 'dyptique/ONY_CAMPAGNESS18_1.jpg', class: 'ony-dyptique-1'
-    .the-sweat-right
-      .container-sweat-dos-face
-        .sweat-title    
-          h2= t('.sweat-title')
-          = link_to t('.discover'), 'http://onyfrance.tictail.com/product/sweat-mondrian-rouge-7847314', target: "blank", class: "discover-btn"
-        .sweat-desc
-          p= t('.sweat-desc')
-        
-        / right slider
-        .ony-dyptique-sweat-dos
-          .slideshow3
-            = link_to 'http://onyfrance.tictail.com/product/sweat-mondrian-jaune-man', target: 'blank' do
-              = image_tag 'dyptique/sweater-MONDRIAN-yellow-dos.jpg', class: 'sweat-dos-3'
-        
-            = link_to 'http://onyfrance.tictail.com/product/sweat-mondrian-jaune-man', target: 'blank' do
-              = image_tag 'dyptique/sweater-MONDRIAN-yellow-profil.jpg', class: 'sweat-dos-2'
-        
-            = link_to 'http://onyfrance.tictail.com/product/sweat-mondrian-jaune-man', target: 'blank' do
-              = image_tag 'dyptique/sweater-MONDRIAN-yellow-face.jpg', class: 'sweat-dos-1'
-        
-        / left slider
-        .ony-dyptique-sweat-profil
-          .slideshow4
-            = link_to 'http://onyfrance.tictail.com/product/sweat-mondrian-rouge-7847314', target: 'blank' do
-              = image_tag 'dyptique/sweater-MONDRIAN-red-profil.jpg', class: 'sweat-profil-3'
-          
-            = link_to 'http://onyfrance.tictail.com/product/sweat-mondrian-rouge-7847314', target: 'blank' do
-              = image_tag 'dyptique/sweater-MONDRIAN-red-dos.jpg', class: 'sweat-profil-2'
-          
-            = link_to 'http://onyfrance.tictail.com/product/sweat-mondrian-rouge-7847314', target: 'blank' do
-              = image_tag 'dyptique/sweater-MONDRIAN-red-face.jpg', class: 'sweat-profil-1'
-
-
-  #unisex-wrapper
-    .unisex-left
-      = image_tag 'dyptique/ONY_CAMPAGNESS18_5.jpg', class: 'ony-dyptique-5'
-    .unisex-right
-      .yellow-square
-        p= t('.unisex-title')
-      = image_tag 'dyptique/ONY_CAMPAGNESS18_6.jpg', class: 'ony-dyptique-6'
-
-  #contact-wrapper
-    .contact-container
-      .contact-left
-        .diagonal-text-container.diagonal-text-red
-          span.keep-me-updated.kmu-animation-delay-red="keep me updated"
-        .diagonal-text-container.diagonal-text-blue
-          span.keep-me-updated.kmu-animation-delay-blue="keep me updated"
-        .diagonal-text-container.diagonal-text-yellow
-          span.keep-me-updated.kmu-animation-delay-yellow="keep me updated"
-        = image_tag 'diagonal-shape.svg', class: 'diagonal-shape'
-        h3= link_to 'Cöntact', new_contact_path(@new_contact), class: 'mobile-show'
-        = link_to '', new_contact_path(@new_contact),
-                            class: 'contact-wrapper-button openNewsletterBtn desktop-show bounce',
-                            remote: true
-      .contact-right
-        = image_tag 'dyptique/ONY_CAMPAGNESS18_4.jpg', class: 'ony-dyptique-4'
-
-  #news-social-wrapper
-    .social-left
-      .social-links-container
-        = link_to 'https://www.facebook.com/ony.france', target: "blank", class: 'socialLink social-fb' do
-          span= "facebook"
-        = link_to 'https://www.instagram.com/ony_france/', target: "blank", class: 'socialLink social-insta' do
-          span= "instagram"
-        = link_to 'https://fr.pinterest.com/ony_mood/', target: "blank", class: 'socialLink social-pinterest' do
-          span= "pinterest"
-        = link_to 'https://www.youtube.com/channel/UCI5ANm47jXebhgq8LLQjybA', target: "blank", class: 'socialLink social-youtube' do
-          span= "youtube"
-        = link_to 'https://ony-sphere.tumblr.com/', target: "blank", class: 'socialLink social-tumblr' do
-          span= "tumblr"
-
-        = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
-                                          class: 'openNewsletterBtn desktop-show animated-underline-btn',
-                                          remote: true
-
-        = link_to t('newsletter.subscribe'), new_newsletter_path(@new_newsletter),
-                                            class: 'mobile-show'
-
-    .social-right
-      = image_tag 'dyptique/ONY_CAMPAGNESS18_2.jpg', class: 'ony-dyptique-2'
+#home-wrapper
+    = image_tag 'home-ss18-fall/logo-draft.png', class: 'logo-draft'
+    = link_to 'http://onyfrance.tictail.com/', target: "blank" do
+        = image_tag 'home-ss18-fall/girl-window.png', class: 'girl-window'
+    = link_to 'shop', 'http://onyfrance.tictail.com/', target: "blank", class: 'shop-link'
+    = image_tag 'home-ss18-fall/girl.png', class: 'girl'
+    = image_tag 'home-ss18-fall/waves.png', class: 'waves'
+    = link_to 'https://www.facebook.com/ony.france', target: "blank", class: 'social-fb' do
+        = image_tag '003-facebook-logo-button.svg'
+        / .fa.fa-facebook
+    = link_to 'https://www.instagram.com/ony_france/', target: "blank", class: 'social-insta' do
+        = image_tag '002-instagram-logo.svg'
+        / .fa.fa-instagram
+    h1.season FW 18
+    .title
+        span U
+        span L
+        span T
+        span R
+        span A
+        span V
+        span I
+        span O
+        span L
+        span E
+        span T
+    .top-rectangle
+    .left-rectangle
+    .bottom-rectangle
