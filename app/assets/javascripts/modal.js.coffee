@@ -4,6 +4,7 @@ $ ->
                           .delay(200)
                           .animate 'margin-top':'0'
     $('#modalOverlay').animate 'height':'100%', 'top':'0'
+    $('#onscroll-nav').slideUp(300)
 
   $('#modalOverlay').on 'click', ->
     container1 = $('#modalContainer')

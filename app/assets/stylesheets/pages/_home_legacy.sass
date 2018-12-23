@@ -242,6 +242,15 @@
 
             .ony-dyptique-7
                 max-width: 455px
+                position: relative
+
+                &:after
+                    content: 'THE CENTERPIECE'
+                    position: absolute
+                    bottom: 0
+                    right: 10px
+                    @media all and (max-width: $screen-sm-min)  
+                        content: ''
 
                 @media all and (max-width: $screen-sm-min)  
                     max-width: 100%
