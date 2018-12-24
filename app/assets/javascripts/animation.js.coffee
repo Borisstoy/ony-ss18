@@ -2,6 +2,7 @@ $ ->
 
   console.log('start typewriter')
   if window.location.pathname == '/' or window.location.pathname == '/fr' or window.location.pathname == '/en'
+  
     typeWriter = (text, n) ->
       if n < text.length
         $('.typewriter-dyptique').html text.substring(0, n + 1)
@@ -16,8 +17,9 @@ $ ->
     typeWriter text, 0
     return
 
-$ -> 
-  window.fadeInValue = 600
+
+# $ -> 
+#   window.fadeInValue = 600
 
 # $ ->
 #   console.log('start slideshows')

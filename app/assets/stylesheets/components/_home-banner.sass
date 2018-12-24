@@ -5,6 +5,7 @@
     height: 100vh
 
     .logo-nav
+        z-index: 2
         @media all and (max-width: $screen-sm-min)
             height: 60px
         img
@@ -13,13 +14,13 @@
 
     .home-video-banner
         height: 100vh
-        margin-bottom: 3.5rem
         width: 100%
         background: transparent
+        position: absolute
         +flexbox
         +alignitems-center
         +justifycontent-center
-        position: relative
+        // position: relative
 
         .video-container
             width: 100%
