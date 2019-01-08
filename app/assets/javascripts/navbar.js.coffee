@@ -19,24 +19,24 @@ $ ->
   is_path = (path) ->
     window.location.pathname == path
     
-  if is_path('/') or is_path('/dyptique')
-    $(window).on 'scroll', ->
-      if $(window).scrollTop() >= 1
-        $('#main-nav').slideUp(500)
-        $('#on-scroll-nav-trigger').stop().animate 'margin-right':'0'
+  # if is_path('/') or is_path('/dyptique')
+  #   $(window).on 'scroll', ->
+  #     if $(window).scrollTop() >= 1
+  #       $('#main-nav').slideUp(500)
+  #       $('#on-scroll-nav-trigger').stop().animate 'margin-right':'0'
 
-      else if $(window).scrollTop() <= 137
-        $('#main-nav').slideDown(200)
-        $('#main-nav').css('display', '')
-        $('#on-scroll-nav-trigger').animate 'margin-right':'-85px'
+  #     else if $(window).scrollTop() <= 137
+  #       $('#main-nav').slideDown(200)
+  #       $('#main-nav').css('display', '')
+  #       $('#on-scroll-nav-trigger').animate 'margin-right':'-85px'
 
-  $('#on-scroll-nav-trigger').click ->
-    $('body').css('overflow':'hidden')
-    $('#onscroll-nav').slideDown(300)
+  # $('#on-scroll-nav-trigger').click ->
+  #   $('body').css('overflow':'hidden')
+  #   $('#onscroll-nav').slideDown(300)
 
-  $('#onscroll-nav-close-btn').click ->
-    $('body').css('overflow':'auto')
-    $('#onscroll-nav').slideUp(300)
+  # $('#onscroll-nav-close-btn').click ->
+  #   $('body').css('overflow':'auto')
+  #   $('#onscroll-nav').slideUp(300)
 
 
   $(window).on 'scroll', ->
