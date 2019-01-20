@@ -1,0 +1,7 @@
+#ultraviolet-wrapper
+  .collection-slider
+    - order_pic_ids = (1..8).to_a
+    - order_pic_ids.each do |pic_id|
+      = image_tag "ultraviolet/ultraviolet-#{pic_id}.jpg", class: "collection-visu-container ultraviolet-#{pic_id}"
+
+    

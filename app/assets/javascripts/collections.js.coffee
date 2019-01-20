@@ -7,6 +7,12 @@ $ ->
     
     velvet           = $('#velvet-wrapper')
     velvetButton     = $('.velvet-nav-link')
+
+    dyptique           = $('#dyptique-collection-wrapper')
+    dyptiqueButton     = $('.dyptique-nav-link')
+
+    ultraviolet           = $('#ultraviolet-wrapper')
+    ultravioletButton     = $('.ultraviolet-nav-link')
     
     collectionNav    = $('#collection-nav-link')
     
@@ -20,14 +26,34 @@ $ ->
     bleuCitronButton.click ->
         modulable.fadeOut(200)
         velvet.fadeOut(200)
+        dyptique.fadeOut(200)
+        ultraviolet.fadeOut(200)
         bleuCitron.delay(200).fadeIn(200)
         $('body').css 'background':'#fff'
     
     modulableButton.click ->
         bleuCitron.fadeOut(200)
         velvet.fadeOut(200)
+        dyptique.fadeOut(200)
+        ultraviolet.fadeOut(200)
         modulable.delay(200).fadeIn(200)
         $('body').css 'background':'#f9f9f9'
+
+    dyptiqueButton.click ->
+        bleuCitron.fadeOut(200)
+        velvet.fadeOut(200)
+        ultraviolet.fadeOut(200)
+        modulable.fadeOut(200)
+        dyptique.delay(200).fadeIn(200)
+        $('body').css 'background':'#fff'
+
+    ultravioletButton.click ->
+        bleuCitron.fadeOut(200)
+        velvet.fadeOut(200)
+        modulable.fadeOut(200)
+        dyptique.fadeOut(200)
+        ultraviolet.delay(200).fadeIn(200)
+        $('body').css 'background':'#fff'
 
     $(velvetButton, collectionNav).click ->
         modulable.fadeOut(200)

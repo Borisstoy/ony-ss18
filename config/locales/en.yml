@@ -3,17 +3,18 @@ en:
   about: "Örigin"
   contact: "Cöntact"
   follow: "Föllow"
-  legal: "Legal"
+  legal: "Legals"
   t_and_c: "Terms & Conditions"
   returns: "Returns policy"
+  all_rights: "All Rights Reserved"
   pages:
     home:
-      discover: "Discover"
-      one: "[ noun: the state of being strikingly different from something else in juxtaposition or close association. ]"
-      teddy-title: "TEDDY TED"
-      teddy-desc: "ÖNY's centerpiece"
-      sweat-title: "T-SHIRT TONY"
-      sweat-desc: "True ode to insurance, character and sure pace"
+      discover: "See more"
+      one: "[ noun: comparing two things in order to show the differences between them ]."
+      teddy-title: "Teddy Jacket TED"
+      teddy-desc: "The centerpiece of every collection"
+      sweat-title: "T-shirt TONY"
+      sweat-desc: "A true ode to self confidence and style"
       unisex-title: "ÖNY erases the matter of genre, the oversized proportions respond to the athleisure trend and gives birth to a 100% unisex wardrobe."
     lookbook:
     sphere:
@@ -36,13 +37,10 @@ en:
 
       the_collection:
         "<h3 class= 'about-title'>The collection</h3>
-        <p>This brand new summer 18 collection, is directly inspired by Mondrian's work :<br>
-        The primary colors mix and confront one another. <br>
-        The contours merge and contrast each other. <br>
+        <p>In a retro futuristic wardrobe borrowed from the 90's, the print fabric, basically inherent  to the brand, fades away to let the colors emerge.
         <br>
-        Colorful, graphic, sportswear, <br>
-        The esthete is allowed to conjugate his own stylistic grammar. <br>
-        <b>DYPTIQUE / Draw your identity<b></p>"
+        The blue and the orange, complementary colors combine with the white to create an explosive, bold, surprising, colorblock
+        <b>CONTRST / Dare to wear<b></p>"
     contact:
 
   newsletter:

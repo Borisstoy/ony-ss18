@@ -1,10 +1,7 @@
-#dyptique-wrapper
-  #dyptique-intro.collection-intro
+#dyptique-collection-wrapper
+  .collection-slider
+    - order_pic_ids = (1..4).to_a
+    - order_pic_ids.each do |pic_id|
+      = image_tag "dyptique-collection/dyptique-#{pic_id}.jpg", class: "collection-visu-container dyptique-#{pic_id}"
 
-  = image_tag 'dyptique/ONY_CAMPAGNESS18_4.jpg', class: 'dyptique-img dyptique-img-4'
-  = image_tag 'dyptique/ONY_CAMPAGNESS18_3.jpg', class: 'dyptique-img dyptique-img-3'
-  = image_tag 'dyptique/ONY_CAMPAGNESS18_1.jpg', class: 'dyptique-img dyptique-img-1'
-  = image_tag 'dyptique/ONY_CAMPAGNESS18_5.jpg', class: 'dyptique-img dyptique-img-5'
-  = image_tag 'dyptique/ONY_CAMPAGNESS18_2.jpg', class: 'dyptique-img dyptique-img-2'
-  = image_tag 'dyptique/ONY_CAMPAGNESS18_6.jpg', class: 'dyptique-img dyptique-img-6'
-  = image_tag 'dyptique/ONY_CAMPAGNESS18_7.jpg', class: 'dyptique-img dyptique-img-7'
+    

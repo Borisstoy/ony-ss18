@@ -6,16 +6,21 @@ $ ->
     typeWriter = (text, n) ->
       if n < text.length
         $('.typewriter-dyptique').html text.substring(0, n + 1)
+        if text.substring(0, n) == '['
+          console.log($('.typewriter-dyptique').html())
+          console.log(text[0])
+          console.log(typeof text[0])
+          text[0].fontcolor 'red'
         n++
         setTimeout (->
           typeWriter text, n
           return
         ), 100
       return
-
     text = $('.typewriter-dyptique').data('text')
     typeWriter text, 0
     return
+
 
 
 # $ -> 

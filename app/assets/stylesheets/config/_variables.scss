@@ -3,7 +3,6 @@
  * ------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700|Oswald:400,700,900');
-
 @font-face {
   font-family: 'Gotham';
   src: font-url('Gotham-Bold.otf') format("opentype");
@@ -25,10 +24,12 @@
   font-style: normal;
 }
 
-$base-font: "Roboto", Helvetica, sans-serif;
-$header-font: 'Roboto', Helvetica, sans-serif;
-
-
+$base-font: "Roboto",
+Helvetica,
+sans-serif;
+$header-font: 'Roboto',
+Helvetica,
+sans-serif;
 // Local fonts (uncomment following lines)
 // @font-face {
 //   font-family: "Font Name";
@@ -38,30 +39,33 @@ $header-font: 'Roboto', Helvetica, sans-serif;
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
-
 // Font-size and line-height
 $base-size: 16px;
 $base-height: 1.4;
-
 /* -------------------------------------
  * Colors
  * ------------------------------------- */
+
 // Scheme
 $brand-color: #D23333;
-
 $red: #EE5F5B;
 $blue: #469AE0;
 $yellow: #FDB631;
 $orange: #E67E22;
 $green: #32B796;
 $gray: #000000;
-
-
 img {
-  user-drag: none; 
+  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+.row {
+  @media all and (max-width: $screen-sm-min) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
