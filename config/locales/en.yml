@@ -10,7 +10,8 @@ en:
   pages:
     home:
       discover: "See more"
-      one: "[ noun: comparing two things in order to show the differences between them ]."
+      contrast: "Contrast"
+      one: "[ noun contrast: comparing two things in order to show the differences between them ]."
       teddy-title: "Teddy Jacket TED"
       teddy-desc: "The centerpiece of every collection"
       sweat-title: "T-shirt TONY"
@@ -21,19 +22,19 @@ en:
     origin:
       the_brand:
         "<h3 class= 'about-title'>The brand</h3>
-        <p>ÖNY is a french ready-to-wear label for men & women led by Audrey Jouanny. <br>
+        <p>ÖNY is a <b>french ready-to-wear label</b> for men & women led by Audrey Jouanny. <br>
 
         Since 2015, ÖNY intents to give its own definition of fashion : <br>
-        Think the garment as a vector of singularity.<br>
+        <b>Think the garment as a vector of singularity.</b><br>
         </p>"
 
       the_creativity:
-        "<p>We focus on creativity, quality and durability : <br>
+        "<p>We focus on <b>creativity, quality and durability</b> : <br>
         The different artistic collaborations feed the stylistic process. <br>
-        Each piece is proudly made in France in limited edition. <br>
+        Each piece is proudly <b>designed in France</b> in limited edition. <br>
         <br>
-        The basics of the sportswear wardrobe are each season reinterpreted to match with the urban lifestyle. <br><br>
-        The teddy jacket, the starting point of every collection, embodies this era where menswear & womenswear mixed up to result a total unisex closet. <br></p>"
+        The basics of the sportswear wardrobe are each season reinterpreted to match with <b>the urban lifestyle.</b> <br><br>
+        <b>The teddy jacket</b>, the starting point of every collection, embodies this era where menswear & womenswear mixed up to result a total <b>unisex</b> closet. <br></p>"
 
       the_collection:
         "<h3 class= 'about-title'>The collection</h3>

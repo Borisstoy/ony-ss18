@@ -10,6 +10,7 @@ fr:
   pages:
     home:
       discover: "Découvrir"
+      contrast: "Contraste"
       one: "[ n.m contraste: opposition de deux choses dont l'une fait ressortir l'autre ]"
       teddy-title: "Teddy Jacket TED"
       teddy-desc: "La pièce maîtresse de chaque collection"
@@ -21,16 +22,16 @@ fr:
     origin:
       the_brand:
         "<h3 class= 'about-title'>La marque</h3>
-        <p>Sous la direction artistique de Audrey Jouanny, ÖNY est un atelier français de prêt-à-porter pour homme et femme.<br>
+        <p>Sous la direction artistique de Audrey Jouanny, ÖNY est un <b>atelier français</b> de prêt-à-porter pour homme et femme.<br>
         Depuis 2015, ÖNY s'applique à livrer sa définition de la mode :<br>
-        Envisager le vêtement comme un vecteur de singularité.</p>"
+        <b>Envisager le vêtement comme un vecteur de singularité.</b></p>"
 
       the_creativity:
-        "<p>Créativité, qualité et pérennité en sont les axes de réflexion :</p>
+        "<p><b>Créativité, qualité et pérennité</b> en sont les axes de réflexion :</p>
         <p>Les différentes collaborations artistiques nourrissent l'univers stylistique.
-        Chaque pièce est produite en France en série limitée.<br>
-        Les basiques du vestiaire sport sont chaque saison réinterprétés pour s'adapter à un lifestyle urbain.<br>
-        Le teddy, point de départ de chaque collection, incarne cette ère où menswear et womenswear se confondent pour aboutir à une garde robe unisexe.</p>"
+        Chaque pièce est <b>conçue en France</b> en série limitée.<br>
+        Les basiques du vestiaire sport sont chaque saison réinterprétés pour s'adapter à un <b>lifestyle urbain.</b><br>
+        <b>Le teddy</b>, point de départ de chaque collection, incarne cette ère où menswear et womenswear se confondent pour aboutir à une garde robe <b>unisexe.</b></p>"
 
       the_collection:
         "<h3 class= 'about-title'>La collection</h3>
