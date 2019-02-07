@@ -55,11 +55,21 @@ $ ->
         ultraviolet.delay(200).fadeIn(200)
         $('body').css 'background':'#fff'
 
-    $(velvetButton, collectionNav).click ->
-        modulable.fadeOut(200)
+    velvetButton.click ->
         bleuCitron.fadeOut(200)
+        modulable.fadeOut(200)
+        dyptique.fadeOut(200)
+        ultraviolet.fadeOut(200)
         velvet.delay(200).fadeIn(200)
-        $('body').css 'background':'#f1f1f1'
+        $('body').css 'background':'#fff'
+
+
+    # $(velvetButton, collectionNav).click ->
+    #     modulable.fadeOut(200)
+    #     bleuCitron.fadeOut(200)
+    #     dyptique.fadeOut(200)
+    #     velvet.delay(200).fadeIn(200)
+    #     $('body').css 'background':'#f1f1f1'
 
     if is_path('/collections')
         $('body').css 'background':'#f1f1f1'
